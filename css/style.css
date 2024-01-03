@@ -2,9 +2,6 @@
   font-family: "Gotham Pro";
   src: url("../fonts/ofont.ru_Gotham Pro.ttf") format("truetype");
 }
-html {
-  scroll-behavior: smooth;
-}
 body {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -789,7 +786,7 @@ header .header_menu.no_active {
 .home h1 {
   color: #fff;
   text-align: center;
-  font-size: 90px;
+  font-size: 60px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
