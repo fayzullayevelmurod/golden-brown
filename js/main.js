@@ -1,3 +1,5 @@
+AOS.init();
+
 let bars = document.querySelector('header .bars');
 let header_menu = document.querySelector('header .header_menu')
 bars.onclick = () => {
