@@ -18,17 +18,17 @@ bars.onclick = () => {
     }
 }
 
-let lang_btn = document.querySelector('.lang_selected');
-let lang_list = document.querySelector('.lang_list');
-lang_btn.onclick = () => {
-    if (lang_list.classList.contains('active')) {
-        lang_list.classList.remove('active');
-        lang_list.classList.add('no_active');
-    } else {
-        lang_list.classList.remove('no_active');
-        lang_list.classList.add('active');
-    }
-}
+// let lang_btn = document.querySelector('.lang_selected');
+// let lang_list = document.querySelector('.lang_list');
+// lang_btn.onclick = () => {
+//     if (lang_list.classList.contains('active')) {
+//         lang_list.classList.remove('active');
+//         lang_list.classList.add('no_active');
+//     } else {
+//         lang_list.classList.remove('no_active');
+//         lang_list.classList.add('active');
+//     }
+// }
 
 let main_selects = document.querySelectorAll('.main_select');
 if (main_selects.length) {
