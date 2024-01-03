@@ -211,9 +211,9 @@ function formatAndAddDollarSign(inputElement) {
     let inputValue = inputElement.value;
     if (numericRegex.test(inputValue)) {
         let formattedValue = inputValue.replace(/\D/g, '').replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1 ");
-        inputElement.value = formattedValue + ' $';
+        inputElement.value = formattedValue + ' ₽';
     } else {
-        inputElement.value = inputValue.replace(/[^\d.]/g, '').replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1 ") + ' $';
+        inputElement.value = inputValue.replace(/[^\d.]/g, '').replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1 ") + ' ₽';
     }
 }
 
