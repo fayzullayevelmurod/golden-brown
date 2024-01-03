@@ -2,6 +2,9 @@
   font-family: "Gotham Pro";
   src: url("../fonts/ofont.ru_Gotham Pro.ttf") format("truetype");
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
