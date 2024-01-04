@@ -839,7 +839,6 @@ header .header_menu.no_active {
   font-size: 22px;
   font-weight: 300;
   line-height: normal;
-  text-transform: lowercase;
 }
 
 .apartments {
@@ -2247,5 +2246,10 @@ footer .footer_bottom p {
   }
   footer .footer_bottom p {
     font-size: 4px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .main_title {
+    font-size: 18px;
   }
 }/*# sourceMappingURL=style.css.map */
