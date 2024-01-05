@@ -186,6 +186,12 @@
             }
         }
     }
+
+    .partner_home {
+        h1 {
+            font-size: 100px;
+        }
+    }
 }
 
 @media only screen and (max-width: 1250px) {
@@ -257,6 +263,10 @@
         font-size: 48px;
         font-weight: 200;
         line-height: 95%;
+    }
+
+    .main_container {
+        padding: 0 20px;
     }
 
     .main_title {
@@ -1036,10 +1046,101 @@
             }
         }
     }
+
+    .partner_home {
+
+        .main_container {
+            .partner_home_bg {
+                top: 57px;
+                width: 211px;
+                height: 438px;
+                right: -105px;
+                object-fit: cover;
+            }
+        }
+
+        .partner_home_bg_right {
+            display: none;
+        }
+
+        .partner_home_bg_left {
+            top: 37px;
+            left: 0;
+            height: 209px;
+        }
+
+        .partner_home_btns {
+            flex-direction: column;
+            gap: 20px;
+
+            .partner_btn {
+                gap: 10px;
+                font-size: 18px;
+            }
+        }
+
+        h1 {
+            padding-top: 0;
+            font-size: 35px;
+            line-height: 90.816%;
+            margin-bottom: 20px;
+        }
+        
+        p {
+            font-size: 18px;
+            margin-bottom: 34px;
+        }
+    }
+
+    .partner_statistic {
+        .main_container {
+            flex-direction: column;
+        }
+
+        .partner_statistic_card {
+            padding: 50px 21px;
+
+            h6 {
+                font-size: 70px;
+                span {
+                    font-size: 25px;
+                }
+            }
+            .left_line {
+                width: 100px;
+                height: 5px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                top: 0;
+                bottom: auto;
+                border-radius: 0 0 20px 20px;
+            }
+    
+            .right_line {
+                width: 100px;
+                height: 5px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                top: auto;
+                bottom: 0;
+                border-radius: 20px 20px 0 0;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 576px) {
     .main_title {
         font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 361px) {
+    .partner_home {
+        margin-bottom: 0;
     }
 }
