@@ -750,6 +750,12 @@ header .header_menu.no_active {
   animation: headerMenuNoActive 0.4s linear 1;
 }
 
+.partner_header {
+  background-color: #2A2A2A;
+  padding-bottom: 100px;
+  position: static;
+}
+
 @keyframes linkAnimation {
   0% {
     transform: translateY(0);
