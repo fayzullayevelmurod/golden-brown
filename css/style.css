@@ -1840,6 +1840,7 @@ footer .footer_bottom p {
     width: 100%;
   }
   footer .footer_top {
+    padding-top: 25px;
     gap: 100px;
     flex-direction: column;
   }
