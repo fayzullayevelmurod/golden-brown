@@ -1570,11 +1570,17 @@ footer .footer_bottom p {
   flex: 1;
   padding: 25px 32px 56px 32px;
   border: 1px solid #EAA363;
-  background: rgba(32, 32, 32, 0.01);
+  background: rgba(32, 32, 32, 0.1);
+  backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
   text-align: center;
   position: relative;
+}
+.partner_statistic .partner_statistic_card .partner_statistic_card_bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .partner_statistic .partner_statistic_card .left_line {
   width: 5px;
@@ -2494,7 +2500,7 @@ footer .footer_bottom p {
     width: 100%;
   }
   footer .footer_top .right_block .description {
-    font-size: 6px;
+    font-size: 14px;
     margin: 0;
     width: 243px;
   }
