@@ -1960,4 +1960,108 @@ footer {
 }
 // partner_statistic
 
+// partner_calculation
+.partner_calculation {
+    padding: 100px 0;
+    background-image: url('../images/partner_contact_bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #fff;
+
+    .calculation_title {
+        margin-bottom: 100px;
+        color: #2A2A2A;
+        font-size: 80px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 90.816%;
+        text-transform: uppercase;
+    }
+
+    .partner_calculation_in {
+        display: flex;
+        align-items: start;
+        gap: 24px;
+
+    }
+
+    .partner_calculation_left {
+        flex: 1;
+        p {
+            margin-bottom: 25px;
+        }
+
+        span {
+            margin-bottom: 15px;
+        }
+
+        p ,span {
+            max-width: 708px;
+            color: #2A2A2A;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        h6 {
+            max-width: 650px;
+            color: #2A2A2A;
+            font-size: 42px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+        }
+    }
+
+    .partner_calculation_right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+
+        p {
+            max-width: 324px;
+            color: #2A2A2A;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+
+
+            a {
+                text-decoration-line: underline;
+            }
+        }
+    }
+
+    .partner_btns {
+        display: flex;
+        gap: 24px;
+
+        button {
+            padding: 21px;
+            flex: 1;
+            text-align: center;
+            font-size: 19px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+
+        .btn_coral {
+            color: #2A2A2A;
+            background-color: #EAA363;
+        }
+
+        .btn_download {
+            background-color: #2A2A2A;
+            color: #fff;
+        }
+
+    }
+    
+}
+// partner_calculation
+
 @import 'responsive';

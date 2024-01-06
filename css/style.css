@@ -1630,6 +1630,91 @@ footer .footer_bottom p {
   line-height: normal;
 }
 
+.partner_calculation {
+  padding: 100px 0;
+  background-image: url("../images/partner_contact_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
+.partner_calculation .calculation_title {
+  margin-bottom: 100px;
+  color: #2A2A2A;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90.816%;
+  text-transform: uppercase;
+}
+.partner_calculation .partner_calculation_in {
+  display: flex;
+  align-items: start;
+  gap: 24px;
+}
+.partner_calculation .partner_calculation_left {
+  flex: 1;
+}
+.partner_calculation .partner_calculation_left p {
+  margin-bottom: 25px;
+}
+.partner_calculation .partner_calculation_left span {
+  margin-bottom: 15px;
+}
+.partner_calculation .partner_calculation_left p, .partner_calculation .partner_calculation_left span {
+  max-width: 708px;
+  color: #2A2A2A;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.partner_calculation .partner_calculation_left h6 {
+  max-width: 650px;
+  color: #2A2A2A;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.partner_calculation .partner_calculation_right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.partner_calculation .partner_calculation_right p {
+  max-width: 324px;
+  color: #2A2A2A;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.partner_calculation .partner_calculation_right p a {
+  text-decoration-line: underline;
+}
+.partner_calculation .partner_btns {
+  display: flex;
+  gap: 24px;
+}
+.partner_calculation .partner_btns button {
+  padding: 21px;
+  flex: 1;
+  text-align: center;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.partner_calculation .partner_btns .btn_coral {
+  color: #2A2A2A;
+  background-color: #EAA363;
+}
+.partner_calculation .partner_btns .btn_download {
+  background-color: #2A2A2A;
+  color: #fff;
+}
+
 @media only screen and (max-width: 1800px) {
   .investments .bg_1 {
     bottom: 32px;
@@ -1754,8 +1839,12 @@ footer .footer_bottom p {
   .contact .text_block {
     width: 100%;
   }
+  footer .footer_top {
+    gap: 100px;
+    flex-direction: column;
+  }
   footer .footer_top .left_block {
-    display: none;
+    flex-direction: column;
   }
   footer .footer_top .right_block {
     align-items: center;
@@ -1839,15 +1928,15 @@ footer .footer_bottom p {
     gap: 6px;
   }
   .main_input_tel .selected_flag img {
-    width: 6.7px;
+    width: 15px;
     height: auto;
   }
   .main_input_tel .selected_flag svg {
-    width: 3px;
+    width: 5px;
     height: auto;
   }
   .main_input_tel .main_input {
-    padding-left: 41px;
+    padding-left: 55px;
     height: 22.74px;
   }
   .main_select__subtitle {
@@ -2379,38 +2468,56 @@ footer .footer_bottom p {
   footer {
     padding: 25px 0;
   }
+  footer .right_block .main_input {
+    font-size: 18px;
+    padding-bottom: 15px;
+  }
+  footer .right_block .btn_golden {
+    padding: 20px;
+    color: #2A2A2A;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: #EAA363;
+  }
   footer .footer_top {
     margin-bottom: 21px;
   }
   footer .footer_top .right_block {
+    align-items: start;
     gap: 21px;
   }
   footer .footer_top .right_block .btn_golden {
-    width: 155.5px;
+    width: 100%;
   }
   footer .footer_top .right_block .description {
     font-size: 6px;
-    width: 139px;
+    margin: 0;
+    width: 243px;
   }
   footer .footer_top .right_block .links {
+    margin: 70px auto 100px auto;
     gap: 22px;
   }
   footer .footer_top .right_block .links a {
     height: 8px;
   }
   footer .footer_top .right_block .links a img {
-    width: 8px;
+    width: 29px;
     height: auto;
   }
   footer .footer_bottom {
     gap: 4px;
   }
   footer .footer_bottom img {
-    width: 50px;
+    width: 220px;
     height: auto;
   }
   footer .footer_bottom p {
-    font-size: 4px;
+    margin-top: 42px;
+    font-size: 12px;
   }
   .partner_home .main_container .partner_home_bg {
     top: 57px;
@@ -2480,9 +2587,42 @@ footer .footer_bottom p {
     bottom: 0;
     border-radius: 20px 20px 0 0;
   }
+  .partner_calculation .partner_calculation_in {
+    flex-direction: column;
+  }
+  .partner_calculation .partner_calculation_right {
+    width: 100%;
+  }
+  .partner_calculation .calculation_title {
+    font-size: 60px;
+    line-height: 90.816%;
+    margin-bottom: 30px;
+  }
+  .partner_calculation .partner_calculation_left h6 {
+    font-size: 27px;
+  }
+  .partner_calculation .partner_calculation_left p, .partner_calculation .partner_calculation_left span {
+    font-size: 18px;
+  }
+  .partner_calculation .partner_calculation_left p {
+    margin-bottom: 30px;
+  }
+  .partner_calculation .partner_calculation_left span {
+    margin-bottom: 50px;
+  }
 }
 @media only screen and (max-width: 576px) {
   .main_title {
+    font-size: 18px;
+  }
+  .partner_calculation .partner_calculation_right {
+    gap: 30px;
+  }
+  .partner_calculation .partner_btns {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .partner_calculation .partner_btns button {
     font-size: 18px;
   }
 }
