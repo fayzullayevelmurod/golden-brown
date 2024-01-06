@@ -1122,6 +1122,7 @@
     }
 
     .partner_statistic {
+        padding-bottom: 137px;
         .main_container {
             flex-direction: column;
         }
@@ -1198,6 +1199,64 @@
         }
 
     }
+
+    .adventages {
+        margin-bottom: 185px;
+
+        .adventages_title {
+            margin-bottom: 58px;
+            max-width: 313px;
+            font-size: 34px;
+            line-height: 90.816%;
+
+            .adventages_title_under {
+                padding-top: 10px;
+                font-size: 22px;
+                line-height: 90.816%;
+            }
+        }
+
+
+        .adventages_in_one {
+            display: block;
+            flex-direction: column;
+            gap: 40px;
+
+            .adventages_card {
+                text-align: center;
+                height: 208px;
+                margin-bottom: 40px;
+
+                .adventages_card_icon {
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                }
+            }
+        }
+        .adventages_in_two {
+            margin-top: 0;
+            flex-direction: column;
+            gap: 40px;
+            display: block;
+
+            .adventages_card {
+                text-align: center;
+                margin-bottom: 40px;
+                height: 208px;
+
+                .adventages_card_icon {
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                }
+            }
+
+            .adventages_card:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 576px) {
@@ -1216,6 +1275,14 @@
 
             button {
                 font-size: 18px;
+            }
+        }
+    }
+
+    .partner_home {
+        .partner_home_btns {
+            button {
+                width: 100%;
             }
         }
     }

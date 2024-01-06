@@ -1883,7 +1883,15 @@ footer {
 
 // partner_statistic
 .partner_statistic {
+    position: relative;
     padding-bottom: 200px;
+
+    .partner_statistic_bg {
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+    }
     .main_container {
         display: flex;
         gap: 24px;
@@ -1967,6 +1975,131 @@ footer {
     }
 }
 // partner_statistic
+
+// adventages
+.adventages {
+    margin-bottom: 200px;
+    .adventages_title {
+        margin-bottom: 100px;
+        max-width: 736px;
+        color: #EAA363;
+        font-size: 80px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 90.816%;
+        text-transform: uppercase;
+
+        .adventages_title_under {
+            padding-top: 15px;
+            text-align: right;
+            color: #FFF;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 90.816%; /* 29.061px */
+        }
+    }
+
+    .adventages_in_one {
+        display: flex;
+        gap: 24px;
+
+        .adventages_card_one {
+            flex: 2;
+            z-index: -1;
+            background: url('../images/adventages1.png'), lightgray 50% / cover no-repeat;
+        }
+        .adventages_card_two {
+            flex: 4;
+            z-index: -1;
+            background: url('../images/adventages2.png'), lightgray 50% / cover no-repeat;
+        }
+        .adventages_card_three {
+            flex: 3;
+            z-index: -1;
+            background: url('../images/adventages3.png'), lightgray 50% / cover no-repeat;
+        }
+    }
+
+    .adventages_in_two {
+        margin-top: 24px;
+        display: flex;
+        gap: 24px;
+
+        .adventages_card_one {
+            flex: 4;
+            z-index: -1;
+            background: url('../images/adventages4.png'), lightgray 50% / cover no-repeat;
+        }
+        .adventages_card_two {
+            flex: 3;
+            z-index: -1;
+            background: url('../images/adventages5.png'), lightgray 50% / cover no-repeat;
+        }
+        .adventages_card_three {
+            flex: 2;
+            z-index: -1;
+            background: url('../images/adventages6.png'), lightgray 50% / cover no-repeat;
+        }
+    }
+
+    .adventages_card {
+        position: relative;
+        border: 1px solid #5B5C5BFF;
+        height: 215px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 45px;
+
+        .adventeges_card_bg {
+            background-color: rgba(0, 0, 0, 0.7);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+        }
+
+        .adventages_card_icon {
+            position: absolute;
+            left: -10px;
+            top: -10px;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color:  #EAA363;
+            filter: drop-shadow(0px 0px 5px #E9A568);
+            z-index: 3;
+            animation: pulsing 1.5s infinite;
+        }
+
+        @keyframes pulsing {
+            from {
+                box-shadow: 0 0 0 0 $--blue;
+            }
+            70% {
+                box-shadow: 0 0 0 $--pulseSize $--transparentBlue;
+            }
+            to {
+                box-shadow: 0 0 0 0 $--transparentBlue;
+            }
+        }
+
+        h6 {
+            position: relative;
+            z-index: 3;
+            color: #FFF;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+    }
+
+}
+// adventages
 
 // partner_calculation
 .partner_calculation {
