@@ -1664,10 +1664,25 @@ footer .footer_bottom p {
   font-style: normal;
   font-weight: 300;
   line-height: 90.816%; /* 29.061px */
+  text-transform: lowercase;
 }
 .adventages .adventages_in_one {
+  position: relative;
   display: flex;
   gap: 24px;
+}
+.adventages .adventages_in_one .adventages_right_bg {
+  position: absolute;
+  right: -69px;
+  top: -69px;
+  z-index: -2;
+}
+.adventages .adventages_in_one .adventages_mobile_bg_1 {
+  display: none;
+  position: absolute;
+  left: -21px;
+  bottom: -55px;
+  z-index: -2;
 }
 .adventages .adventages_in_one .adventages_card_one {
   flex: 2;
@@ -1688,6 +1703,20 @@ footer .footer_bottom p {
   margin-top: 24px;
   display: flex;
   gap: 24px;
+  position: relative;
+}
+.adventages .adventages_in_two .adventages_left_bg {
+  position: absolute;
+  left: -60px;
+  bottom: -76px;
+  z-index: -2;
+}
+.adventages .adventages_in_two .adventages_mobile_bg_2 {
+  display: none;
+  position: absolute;
+  right: -21px;
+  bottom: 100px;
+  z-index: -2;
 }
 .adventages .adventages_in_two .adventages_card_one {
   flex: 4;
@@ -1753,6 +1782,194 @@ footer .footer_bottom p {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+
+.partner_works {
+  margin-bottom: 260px;
+  position: relative;
+}
+.partner_works .adventages_title {
+  margin-bottom: 100px;
+  max-width: 823px;
+  color: #EAA363;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90.816%;
+  text-transform: uppercase;
+}
+.partner_works .adventages_title .adventages_title_under {
+  padding-top: 15px;
+  text-align: right;
+  color: #FFF;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 90.816%; /* 29.061px */
+  text-transform: lowercase;
+}
+.partner_works .partner_works_one {
+  margin-bottom: 100px;
+  position: relative;
+}
+.partner_works .partner_works_one .mobile_line {
+  display: none;
+  height: 30px;
+  width: 2px;
+  background: #EAA363;
+  margin: 50px auto;
+}
+.partner_works .partner_works_one .main_container {
+  display: flex;
+  gap: 56px;
+}
+.partner_works .partner_works_one .partner_works_card {
+  flex: 1;
+  display: flex;
+  align-items: start;
+  gap: 25px;
+}
+.partner_works .partner_works_one .partner_works_card h6 {
+  position: relative;
+  color: #EAA363;
+  text-shadow: 0px 0px 20px rgba(234, 163, 99, 0.5);
+  font-family: "Gotham Pro", sans-serif;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90.816%;
+}
+.partner_works .partner_works_one .partner_works_card h6 .number_line {
+  position: absolute;
+  left: -25px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  width: 24px;
+  height: 1px;
+  background: #EAA363;
+}
+.partner_works .partner_works_one .partner_works_card p {
+  color: #FFF;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.partner_works .partner_works_one .line_right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -50px;
+  margin: auto 0;
+  width: 15%;
+  z-index: -1;
+  height: 1px;
+  background: #EAA363;
+}
+.partner_works .partner_works_two {
+  margin-bottom: 60px;
+  position: relative;
+}
+.partner_works .partner_works_two .mobile_line {
+  display: none;
+  height: 30px;
+  width: 2px;
+  background: #EAA363;
+  margin: 50px auto;
+}
+.partner_works .partner_works_two .line_left {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -50px;
+  margin: auto 0;
+  width: 15%;
+  z-index: -1;
+  height: 1px;
+  background: #EAA363;
+}
+.partner_works .partner_works_two .main_container {
+  display: flex;
+  gap: 56px;
+}
+.partner_works .partner_works_two .partner_works_card {
+  max-width: 460px;
+  display: flex;
+  align-items: start;
+  gap: 25px;
+}
+.partner_works .partner_works_two .partner_works_card h6 {
+  position: relative;
+  color: #EAA363;
+  text-shadow: 0px 0px 20px rgba(234, 163, 99, 0.5);
+  font-family: "Gotham Pro", sans-serif;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90.816%;
+}
+.partner_works .partner_works_two .partner_works_card h6 .number_line {
+  position: absolute;
+  left: -25px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  width: 24px;
+  height: 1px;
+  background: #EAA363;
+}
+.partner_works .partner_works_two .partner_works_card p {
+  color: #FFF;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.partner_works .partner_works_two .line_right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -50px;
+  margin: auto 0;
+  width: 39%;
+  z-index: -1;
+  height: 1px;
+  background: #EAA363;
+}
+.partner_works .partner_works_btns {
+  padding-bottom: 100px;
+}
+.partner_works .partner_works_btns .main_container {
+  display: flex;
+  gap: 50px;
+}
+.partner_works .partner_works_btns button {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: center;
+  width: 342px;
+  padding: 21px 10px;
+  color: #2A2A2A;
+  text-align: center;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.partner_works .partner_works_btns .work_btn_coral {
+  background-color: #EAA363;
+}
+.partner_works .partner_works_btns .work_btn_tranparent {
+  border: 1px solid #fff;
+  color: #fff;
+}
+.partner_works .partner_work_bg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -2;
 }
 
 .partner_calculation {
@@ -1991,6 +2208,89 @@ footer .footer_bottom p {
   }
   .investments p {
     padding: 0px 30px;
+  }
+  .partner_works {
+    margin-bottom: 100px;
+  }
+  .partner_works .partner_work_bg {
+    display: none;
+  }
+  .partner_works .adventages_title {
+    max-width: 320px;
+    font-size: 31px;
+    line-height: 90.816%;
+  }
+  .partner_works .adventages_title .adventages_title_under {
+    padding-top: 10px;
+    font-size: 22px;
+    line-height: 90.816%;
+  }
+  .partner_works .partner_works_one {
+    margin-bottom: 0;
+  }
+  .partner_works .partner_works_one .main_container {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+  .partner_works .partner_works_one .main_container .mobile_line {
+    display: block;
+  }
+  .partner_works .partner_works_one .main_container .partner_works_card {
+    max-width: 460px;
+    position: relative;
+    gap: 5px;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .partner_works .partner_works_one .main_container .partner_works_card p {
+    font-size: 18px;
+  }
+  .partner_works .partner_works_one .main_container .partner_works_card .number_line {
+    display: none;
+  }
+  .partner_works .partner_works_one .main_container .partner_works_card::after {
+    position: absolute;
+  }
+  .partner_works .partner_works_one .main_container .line_right {
+    display: none;
+  }
+  .partner_works .partner_works_two .main_container {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+  .partner_works .partner_works_two .mobile_line {
+    display: block;
+  }
+  .partner_works .partner_works_two .line_left {
+    display: none;
+  }
+  .partner_works .partner_works_two .partner_works_card {
+    gap: 5px;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .partner_works .partner_works_two .partner_works_card p {
+    font-size: 18px;
+  }
+  .partner_works .partner_works_two .partner_works_card .number_line {
+    display: none;
+  }
+  .partner_works .partner_works_two .line_right {
+    display: none;
+  }
+  .partner_works .partner_works_btns {
+    padding-bottom: 0;
+  }
+  .partner_works .partner_works_btns .main_container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .partner_works .partner_works_btns .main_container button {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -2758,6 +3058,12 @@ footer .footer_bottom p {
     flex-direction: column;
     gap: 40px;
   }
+  .adventages .adventages_in_one .adventages_right_bg {
+    display: none;
+  }
+  .adventages .adventages_in_one .adventages_mobile_bg_1 {
+    display: block;
+  }
   .adventages .adventages_in_one .adventages_card {
     text-align: center;
     height: 208px;
@@ -2772,6 +3078,12 @@ footer .footer_bottom p {
     margin-top: 0;
     flex-direction: column;
     gap: 40px;
+    display: block;
+  }
+  .adventages .adventages_in_two .adventages_left_bg {
+    display: none;
+  }
+  .adventages .adventages_in_two .adventages_mobile_bg_2 {
     display: block;
   }
   .adventages .adventages_in_two .adventages_card {

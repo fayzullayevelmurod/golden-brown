@@ -214,6 +214,115 @@
             padding: 0px 30px;
         }
     }
+
+    .partner_works {
+        margin-bottom: 100px;
+
+        .partner_work_bg {
+            display: none;
+        }
+
+        .adventages_title {
+            max-width: 320px;
+            font-size: 31px;
+            line-height: 90.816%;
+
+            .adventages_title_under {
+                padding-top: 10px;
+                font-size: 22px;
+                line-height: 90.816%;
+            }
+        }
+
+        .partner_works_one {
+            margin-bottom: 0;
+            .main_container {
+                flex-direction: column;
+                align-items: center;
+                gap: 0;
+
+                .mobile_line {
+                    display: block;
+                }
+
+                .partner_works_card {
+                    max-width: 460px;
+                    position: relative;
+                    gap: 5px;
+                    align-items: center;
+                    flex-direction: column;
+                    text-align: center;
+
+                    p {
+                        font-size: 18px;
+                    }
+
+                    .number_line {
+                        display: none;
+                    }
+                }
+
+                .partner_works_card::after {
+                    position: absolute;
+
+                }
+
+                .line_right {
+                    display: none;
+                }
+            }
+        }
+
+        .partner_works_two {
+
+            .main_container {
+                flex-direction: column;
+                align-items: center;
+                gap: 0;
+            }
+
+            .mobile_line {
+                display: block;
+            }
+
+            .line_left {
+                display: none;
+            }
+
+            .partner_works_card {
+                gap: 5px;
+                align-items: center;
+                flex-direction: column;
+                text-align: center;
+
+                p {
+                    font-size: 18px;
+                }
+
+
+                .number_line {
+                    display: none;
+                }
+            }
+
+            .line_right {
+                display: none;
+            }
+        }
+
+        .partner_works_btns {
+            padding-bottom: 0;
+
+            .main_container {
+                flex-direction: column;
+                gap: 20px;
+
+                button {
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -1222,6 +1331,14 @@
             flex-direction: column;
             gap: 40px;
 
+            .adventages_right_bg {
+                display: none;
+            }
+
+            .adventages_mobile_bg_1 {
+                display: block;
+            }
+
             .adventages_card {
                 text-align: center;
                 height: 208px;
@@ -1239,6 +1356,14 @@
             flex-direction: column;
             gap: 40px;
             display: block;
+
+            .adventages_left_bg {
+                display: none;
+            }
+
+            .adventages_mobile_bg_2 {
+                display: block;
+            }
 
             .adventages_card {
                 text-align: center;
