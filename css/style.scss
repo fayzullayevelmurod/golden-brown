@@ -1801,7 +1801,7 @@ footer {
 .partner_home {
     position: relative;
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 
     .partner_home_bg_right {
         position: absolute;
@@ -1816,6 +1816,7 @@ footer {
         bottom: 0;
         z-index: -2;
     }
+
     .main_container {
         padding-bottom: 121px;
         position: relative;
@@ -1831,7 +1832,7 @@ footer {
     h1 {
         padding-top: 100px;
         color: #fff;
-        font-size: 150px;
+        font-size: 120px;
         font-style: normal;
         font-weight: 800;
         line-height: 90.816%;
@@ -1841,7 +1842,7 @@ footer {
 
     p {
         color: #fff;
-        font-size: 25px;
+        font-size: 22px;
         font-style: normal;
         font-weight: 300;
         line-height: normal;
@@ -1944,7 +1945,7 @@ footer {
             justify-content: center;
             gap: 5px;
             color: #FFF;
-            font-size: 80px;
+            font-size: 65px;
             font-style: normal;
             font-weight: 600;
             line-height: normal;
@@ -1967,7 +1968,7 @@ footer {
         p {
             color: #FFF;
             text-align: center;
-            font-size: 16px;
+            font-size: 14px;
             font-style: normal;
             font-weight: 200;
             line-height: normal;
@@ -1979,11 +1980,12 @@ footer {
 // adventages
 .adventages {
     margin-bottom: 200px;
+
     .adventages_title {
         margin-bottom: 100px;
-        max-width: 736px;
+        max-width: 600px;
         color: #EAA363;
-        font-size: 80px;
+        font-size: 65px;
         font-style: normal;
         font-weight: 400;
         line-height: 90.816%;
@@ -2136,14 +2138,14 @@ footer {
 
 // partner_works
 .partner_works {
-    margin-bottom: 260px;
+    margin-bottom: 160px;
     position: relative;
 
     .adventages_title {
         margin-bottom: 100px;
-        max-width: 823px;
+        max-width: 670px;
         color: #EAA363;
-        font-size: 80px;
+        font-size: 65px;
         font-style: normal;
         font-weight: 400;
         line-height: 90.816%;
@@ -2190,7 +2192,7 @@ footer {
                 color: #EAA363;
                 text-shadow: 0px 0px 20px rgba(234, 163, 99, 0.50);
                 font-family: 'Gotham Pro', sans-serif;
-                font-size: 100px;
+                font-size: 90px;
                 font-style: normal;
                 font-weight: 400;
                 line-height: 90.816%;
@@ -2209,7 +2211,7 @@ footer {
 
             p {
                 color: #FFF;
-                font-size: 22px;
+                font-size: 20px;
                 font-style: normal;
                 font-weight: 500;
                 line-height: normal;
@@ -2270,7 +2272,7 @@ footer {
                 color: #EAA363;
                 text-shadow: 0px 0px 20px rgba(234, 163, 99, 0.50);
                 font-family: 'Gotham Pro', sans-serif;
-                font-size: 100px;
+                font-size: 90px;
                 font-style: normal;
                 font-weight: 400;
                 line-height: 90.816%;
@@ -2289,7 +2291,7 @@ footer {
 
             p {
                 color: #FFF;
-                font-size: 22px;
+                font-size: 20px;
                 font-style: normal;
                 font-weight: 500;
                 line-height: normal;
