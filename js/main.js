@@ -62,12 +62,14 @@ const target = document.querySelector('header .lang')
 document.addEventListener('click', (event) => {
     const withinBoundaries = event.composedPath().includes(target)
 
-    if (!withinBoundaries) {
-        if (lang_list.classList.contains('active')) {
-            lang_list.classList.remove('active');
-            lang_list.classList.add('no_active');
-        }
-    }
+    // if (!withinBoundaries) {
+    //     if (lang_list) {
+    //         if (lang_list.classList.contains('active')) {
+    //             lang_list.classList.remove('active');
+    //             lang_list.classList.add('no_active');
+    //         }
+    //     }
+    // }
 
     if (main_selects.length) {
         main_selects.forEach(select => {
@@ -262,3 +264,13 @@ window.addEventListener("resize", function () {
     }
 });
 
+let object_home_slider = document.querySelector('.object_home__slider .swiper');
+if (object_home_slider) {
+    let object_slider = new Swiper(object_home_slider, {
+        slidesPerView: 1,
+        pagination: {
+            el: ".object_home__slider .spiper_pagination",
+            clickable: true,
+        },
+    })
+}
