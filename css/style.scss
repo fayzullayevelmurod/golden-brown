@@ -2652,12 +2652,14 @@ footer {
         .spiper_pagination {
             position: absolute;
             width: 100%;
-            bottom: 24px;
+            height: 75px;
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 10px;
             z-index: 3;
+            bottom: 0;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 117.33%, #000 117.33%);
 
             span {
                 padding: 0;
@@ -2771,6 +2773,10 @@ footer {
                 margin-bottom: 25px;
             }
         }
+        
+        .stars {
+            display: none;
+        }
     }
 
     .image_block {
@@ -2828,15 +2834,26 @@ footer {
 
         .left_block {
             text-align: center;
+            width: 586px;
+
+            .mobile {
+                display: none;
+            }
 
             .main_link {
                 width: 100%;
                 justify-content: center;
                 margin: 50px 0 226px;
             }
+
+            .main_img {
+                width: 100%;
+            }
         }
 
         .right_block {
+            width: calc(100% - 586px - 23px);
+
             .subtitle {
                 color: #161616;
                 font-size: 20px;
@@ -2854,9 +2871,12 @@ footer {
                 line-height: normal;
                 text-transform: uppercase;
                 max-width: 831px;
+                margin-bottom: 50px;
             }
 
-
+            img {
+                width: 100%;
+            }
         }
     }
 
@@ -2970,6 +2990,8 @@ footer {
         }
         
         .left_block {
+            width: 586px;
+
             .title {
                 color: #161616;
                 font-size: 40px;
@@ -3002,11 +3024,25 @@ footer {
                 margin-bottom: 50px;
             }
         }
+
+        .right_block {
+            width: calc(100% - 586px - 34px);
+            object-fit: cover;
+        }
     }
 
     .content_bottom {
         .main_container {
             margin-bottom: 50px;
+        }
+
+        .left_img {
+            width: calc(100% - 464px - 24px);
+            object-fit: cover;
+        }
+
+        .right_img {
+            width: 464px;
         }
     }
 
