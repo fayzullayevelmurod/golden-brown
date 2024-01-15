@@ -2563,7 +2563,7 @@ footer {
             font-weight: 300;
             line-height: normal;
 
-            span {
+            span:not(.counter2) {
                 font-size: 40px;
                 display: block;
                 margin-bottom: 5px;
@@ -2634,6 +2634,21 @@ footer {
             height: 500px;
             top: -251px;
 
+            @keyframes pulseAnimation {
+                0% {
+                    opacity: 0.2;
+                    transform: scale(.8) translate(-50%, -50%);
+                }
+                50% {
+                    opacity: 0.25;
+                    transform: scale(1) translate(-50%, -50%);
+                }
+                100% {
+                    opacity: 0.2;
+                    transform: scale(.8) translate(-50%, -50%);
+                }
+            }
+
             &::before {
                 content: '';
                 position: absolute;
@@ -2644,8 +2659,10 @@ footer {
                 transform: translate(-50%, -50%);
                 border-radius: 819px;
                 opacity: 0.2;
+                transform: scale(.8);
                 background: #EAA363;
                 filter: blur(100px);
+                animation: pulseAnimation 1.5s linear infinite;
             }
         }
 
@@ -2853,6 +2870,7 @@ footer {
 
         .right_block {
             width: calc(100% - 586px - 23px);
+            position: relative;
 
             .subtitle {
                 color: #161616;
@@ -2877,6 +2895,14 @@ footer {
             img {
                 width: 100%;
             }
+
+            img.star {
+                position: absolute;
+                width: 111px;
+                height: 111px;
+                bottom: -75px;
+                right: -79px;
+            }
         }
     }
 
@@ -2898,6 +2924,10 @@ footer {
                 display: flex;
                 align-items: center;
                 gap: 492px;
+            }
+
+            i {
+                font-style: normal;
             }
 
             &:not(:nth-child(1)):not(.line) {

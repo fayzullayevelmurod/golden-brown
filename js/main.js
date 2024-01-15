@@ -105,7 +105,7 @@ document.addEventListener('click', (event) => {
 // }
 
 
-function addAnimation (span) {
+function addAnimation(span) {
     let cls = ['animate0', 'animate1', 'animate2', 'animate3'];
     let i = -1;
     setInterval(() => {
@@ -274,3 +274,26 @@ if (object_home_slider) {
         },
     })
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    function counter(id, start, end, duration) {
+        let obj = document.querySelector('.' + id),
+            current = start,
+            range = end - start,
+            increment = end > start ? 1 : -1,
+            step = Math.abs(Math.floor(duration / range)),
+            timer = setInterval(() => {
+                current += increment;
+                if (obj) {
+                    obj.textContent = current;
+                }
+                if (current == end) {
+                    clearInterval(timer);
+                }
+            }, step);
+    }
+    counter("counter1", 0, 985, 50);
+    counter("counter2", 0, 97, 2000);
+    counter("count3", 0, 40, 3000);
+});
+
