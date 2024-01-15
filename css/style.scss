@@ -210,6 +210,10 @@ ul {
         display: block;
     }
 
+    select {
+        display: none;
+    }
+
     &__btn {
         width: 100%;
         text-align: left;
@@ -272,6 +276,16 @@ ul {
             max-height: 0;
             transition: .3s ease all;
             z-index: 2;
+        }
+    }
+}
+
+.main_select.error {
+    .main_select__btn {
+        border-bottom: 1px solid red;
+
+        span {
+            color: red;
         }
     }
 }

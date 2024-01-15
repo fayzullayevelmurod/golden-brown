@@ -190,6 +190,9 @@ ul {
   margin-left: 53px;
   display: block;
 }
+.main_select select {
+  display: none;
+}
 .main_select__btn {
   width: 100%;
   text-align: left;
@@ -246,6 +249,13 @@ ul {
   max-height: 0;
   transition: 0.3s ease all;
   z-index: 2;
+}
+
+.main_select.error .main_select__btn {
+  border-bottom: 1px solid red;
+}
+.main_select.error .main_select__btn span {
+  color: red;
 }
 
 .btn_golden {

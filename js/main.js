@@ -39,11 +39,12 @@ if (main_selects.length) {
         let text = select.querySelector('.main_select__btn span');
         let select_list = select.querySelector('.main_select__list_wrap');
         let select_list_item = select.querySelectorAll('.main_select__list li');
+        let select_tag = document.querySelector('.main_select select')
         btn.onclick = () => {
             select_list.style.maxHeight = select_list.style.maxHeight ? null : select_list.scrollHeight + 'px';
             select_list.classList.toggle('active')
         }
-        select_list_item.forEach(list_item => {
+        select_list_item.forEach((list_item, idx) => {
             list_item.onclick = () => {
                 select_list.style.maxHeight = select_list.style.maxHeight ? null : select_list.scrollHeight + 'px';
                 select_list.classList.remove('active')
@@ -52,9 +53,24 @@ if (main_selects.length) {
                     item.classList.remove("active");
                 })
                 list_item.classList.add('active')
+                if (select_tag) {
+                    select_tag.options[idx + 1].selected = 'selected'
+                }
             }
         })
     })
+}
+
+let form_btn = document.querySelector('.consultation__form .btn_golden');
+let form_select = document.querySelector('.consultation__form select')
+form_btn.onclick = e => {
+    e.preventDefault();
+    let value = form_select.value || false;
+    if (!value) {
+        document.querySelector('.consultation__form .main_select').classList.add('error');
+    } else {
+        document.querySelector('.consultation__form .main_select').classList.remove('error');
+    }
 }
 
 const target = document.querySelector('header .lang')
