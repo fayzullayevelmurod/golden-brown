@@ -2669,6 +2669,9 @@ footer .footer_bottom p {
     height: 329px;
     width: auto;
   }
+  .object_investments .main_title {
+    font-size: 70px;
+  }
 }
 @media only screen and (max-width: 1500px) {
   .sochi ul li {
@@ -2812,6 +2815,12 @@ footer .footer_bottom p {
   }
   .contact .text_block {
     width: 100%;
+  }
+  .object_investments .bg_2 {
+    height: 120px;
+  }
+  .object_investments .main_title {
+    font-size: 40px;
   }
   footer .footer_top {
     padding-top: 25px;
