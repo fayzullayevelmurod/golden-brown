@@ -2974,7 +2974,7 @@ footer .footer_bottom p {
 }
 .selling_apartments .sparkle_element-2 {
   position: absolute;
-  bottom: -100px;
+  bottom: -132px;
   left: 0;
   transform: rotate(-128.65deg);
   z-index: 10;
@@ -3100,6 +3100,86 @@ footer .footer_bottom p {
 }
 .selling_form-right .description a {
   text-decoration: underline;
+}
+
+.home_card.selling_home-card {
+  background-image: url(../images/render-fon.png);
+  padding: 200px 0 196px 0;
+  margin-top: -4px;
+  border-bottom: 1px solid #2f2d2c;
+}
+.home_card.selling_home-card .main_title-two {
+  color: #fff;
+  margin-bottom: 194px;
+}
+.home_card.selling_home-card .home_card__bottom {
+  margin: 200px 0;
+}
+.home_card.selling_home-card .main_text_golden {
+  color: #eaa363;
+}
+
+.result {
+  background: #2a2a2a;
+  color: #fff;
+  padding-bottom: 106px;
+}
+.result .main_title-two {
+  color: #fff;
+  margin-bottom: 37px;
+}
+.result_cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+}
+.result_card {
+  border: 1px solid rgba(255, 255, 255, 0.5019607843);
+  padding: 63px 32px 62px 35px;
+  flex: 1 1 0%;
+  height: 100%;
+}
+.result_card-title {
+  font-size: 50px;
+  font-weight: 200;
+  line-height: 47.5px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  color: #eaa363;
+}
+.result_card-info {
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 30.48px;
+  max-width: 370px;
+}
+.result_link {
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 23.16px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 144px auto 0 auto;
+  text-transform: uppercase;
+  position: relative;
+}
+.result_link::before {
+  content: "";
+  position: absolute;
+  width: 76px;
+  height: 1px;
+  background: #fff;
+  bottom: -5px;
+  left: 50%;
+  transition: all 0.3s linear;
+  transform: translateX(-50%);
+}
+.result_link:hover::before {
+  width: 100%;
 }
 
 .main_title-two {
