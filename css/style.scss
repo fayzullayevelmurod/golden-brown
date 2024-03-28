@@ -50,6 +50,7 @@ ul {
 }
 
 .wrapper {
+  position: relative;
   width: 100%;
   overflow: hidden;
 }
@@ -3493,8 +3494,16 @@ footer {
   }
 }
 // investments page end
-
 // seling-apartments start
+.selling_apartments-header {
+  .sparkle_element-1 {
+    position: absolute;
+    top: -100px;
+    right: -125px;
+    transform: rotate(-128.65deg);
+    z-index: -1;
+  }
+}
 .selling_apartments {
   background: #2a2a2a;
   padding-top: 253px;
@@ -3515,13 +3524,6 @@ footer {
     border-radius: 50%;
   }
 
-  .sparkle_element-1 {
-    position: absolute;
-    top: -100px;
-    right: -125px;
-    transform: rotate(-128.65deg);
-    z-index: -1;
-  }
   .sparkle_element-2 {
     position: absolute;
     bottom: -100px;
@@ -3550,28 +3552,45 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  // flex-wrap: wrap;
   color: #fff;
   gap: 172px;
   margin-top: 50px;
 
   &-images {
-    img {
+    div {
       display: block;
     }
-    img:last-child {
-      margin-top: -52px;
-      margin-left: 133px;
+    div:first-child {
       position: relative;
-      z-index: 1;
+
       &::before {
         content: "";
         position: absolute;
         background: #eaa363;
-        width: 377px;
-        height: 377px;
-        top: 483px;
-        left: 296px;
+        width: 275px;
+        height: 290px;
+        top: 0;
+        left: 98px;
+        opacity: 50%;
+        z-index: -1;
+        filter: blur(100px);
+      }
+    }
+
+    div:last-child {
+      margin-top: -52px;
+      margin-left: 133px;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        background: #eaa363;
+        width: 335px;
+        height: 343px;
+        top: 0;
+        filter: blur(89px);
+        left: 145px;
         opacity: 50%;
         z-index: -1;
       }
@@ -3590,6 +3609,7 @@ footer {
     position: relative;
     margin-top: 33px;
     color: #eaa363;
+    text-transform: uppercase;
 
     &::before {
       content: "";
@@ -3599,6 +3619,41 @@ footer {
       width: 100%;
       height: 1px;
       background: #eaa363;
+    }
+  }
+}
+.selling_form {
+  display: flex;
+  align-items: center;
+
+  &-right {
+    flex: 1;
+    background: #fff;
+    padding: 0 233px 0 137px;
+    .selected_flag {
+      top: 25%;
+    }
+    .main_input {
+      margin-bottom: 50px;
+      &::placeholder {
+        color: #2a2a2a80;
+        opacity: 50%;
+      }
+    }
+    .btns {
+      display: flex;
+      gap: 50px;
+      margin-bottom: 50px;
+    }
+    .description {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 17.07px;
+      max-width: 324px;
+      color: #2a2a2a;
+      a {
+        text-decoration: underline;
+      }
     }
   }
 }

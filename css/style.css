@@ -47,6 +47,7 @@ ul {
 }
 
 .wrapper {
+  position: relative;
   width: 100%;
   overflow: hidden;
 }
@@ -2944,6 +2945,14 @@ footer .footer_bottom p {
   width: 514px;
 }
 
+.selling_apartments-header .sparkle_element-1 {
+  position: absolute;
+  top: -100px;
+  right: -125px;
+  transform: rotate(-128.65deg);
+  z-index: -1;
+}
+
 .selling_apartments {
   background: #2a2a2a;
   padding-top: 253px;
@@ -2962,13 +2971,6 @@ footer .footer_bottom p {
   background: #eaa363;
   filter: blur(67px);
   border-radius: 50%;
-}
-.selling_apartments .sparkle_element-1 {
-  position: absolute;
-  top: -100px;
-  right: -125px;
-  transform: rotate(-128.65deg);
-  z-index: -1;
 }
 .selling_apartments .sparkle_element-2 {
   position: absolute;
@@ -3002,23 +3004,38 @@ footer .footer_bottom p {
   gap: 172px;
   margin-top: 50px;
 }
-.selling_apartment-images img {
+.selling_apartment-images div {
   display: block;
 }
-.selling_apartment-images img:last-child {
-  margin-top: -52px;
-  margin-left: 133px;
+.selling_apartment-images div:first-child {
   position: relative;
-  z-index: 1;
 }
-.selling_apartment-images img:last-child::before {
+.selling_apartment-images div:first-child::before {
   content: "";
   position: absolute;
   background: #eaa363;
-  width: 377px;
-  height: 377px;
-  top: 483px;
-  left: 296px;
+  width: 275px;
+  height: 290px;
+  top: 0;
+  left: 98px;
+  opacity: 50%;
+  z-index: -1;
+  filter: blur(100px);
+}
+.selling_apartment-images div:last-child {
+  margin-top: -52px;
+  margin-left: 133px;
+  position: relative;
+}
+.selling_apartment-images div:last-child::before {
+  content: "";
+  position: absolute;
+  background: #eaa363;
+  width: 335px;
+  height: 343px;
+  top: 0;
+  filter: blur(89px);
+  left: 145px;
   opacity: 50%;
   z-index: -1;
 }
@@ -3034,6 +3051,7 @@ footer .footer_bottom p {
   position: relative;
   margin-top: 33px;
   color: #eaa363;
+  text-transform: uppercase;
 }
 .selling_apartment-link::before {
   content: "";
@@ -3043,6 +3061,45 @@ footer .footer_bottom p {
   width: 100%;
   height: 1px;
   background: #eaa363;
+}
+
+.selling_form {
+  display: flex;
+  align-items: center;
+}
+.selling_form-right {
+  flex: 1;
+  background: #fff;
+  padding: 0 233px 0 137px;
+}
+.selling_form-right .selected_flag {
+  top: 25%;
+}
+.selling_form-right .main_input {
+  margin-bottom: 50px;
+}
+.selling_form-right .main_input::-moz-placeholder {
+  color: rgba(42, 42, 42, 0.5019607843);
+  opacity: 50%;
+}
+.selling_form-right .main_input::placeholder {
+  color: rgba(42, 42, 42, 0.5019607843);
+  opacity: 50%;
+}
+.selling_form-right .btns {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+.selling_form-right .description {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 17.07px;
+  max-width: 324px;
+  color: #2a2a2a;
+}
+.selling_form-right .description a {
+  text-decoration: underline;
 }
 
 .main_title-two {

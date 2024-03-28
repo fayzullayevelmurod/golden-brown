@@ -25,7 +25,8 @@
   <div class="wrapper">
 
     <!-- Header -->
-    <header class="investments_header">
+    <header class="selling_apartments-header">
+      <img class="sparkle_element-1" src="images/sparkle.png" alt="">
       <div class="main_container">
         <a href="/" class="logo">
           <img src="./images/header_logo.svg" alt="">
@@ -151,9 +152,8 @@
     </header>
     <!-- Header end -->
 
-    <!-- selling-page -->
+    <!-- selling-section -->
     <section class="selling_apartments">
-      <img class="sparkle_element-1" src="images/sparkle.png" alt="">
       <img class="sparkle_element-2" src="images/sparkle.png" alt="">
       <div class="main_container no-p">
         <h2 class="main_title">Поможем продать ваш апартамент
@@ -164,8 +164,12 @@
       <div class="main_container">
         <div class="selling_apartment">
           <div class="selling_apartment-images">
-            <img src="images/apartment-1.png" alt="">
-            <img src="images/apartment-2.png" alt="">
+            <div>
+              <img src="images/apartment-1.png" alt="">
+            </div>
+            <div>
+              <img src="images/apartment-2.png" alt="">
+            </div>
           </div>
           <div>
             <p class="selling_apartment-info">
@@ -180,6 +184,39 @@
       </div>
       <h2 class="main_title-two">форма <br>
         для заполнения</h2>
+    </section>
+
+    <!-- selling-form -->
+    <section class="selling_form">
+      <div>
+        <img src="images/form-bg.png" alt="">
+      </div>
+      <div class="selling_form-right">
+        <form>
+          <input type="text" class="main_input" placeholder="Ваше имя">
+          <div class="main_input_tel">
+            <button type="button" class="selected_flag">
+              <img src="./images/flag.svg" alt="">
+              <svg xmlns="http://www.w3.org/2000/svg" width="5" height="5" viewBox="0 0 5 5" fill="none">
+                <path d="M2.5 4.5L0.334936 0.75L4.66506 0.75L2.5 4.5Z" fill="#424242"></path>
+              </svg>
+            </button>
+            <input type="tel" class="main_input" placeholder="+7 (999) 999-99-99">
+          </div>
+          <input type="text" class="main_input" placeholder="Какова цель продажи?">
+          <input type="text" class="main_input" placeholder="Адрес">
+          <input type="text" class="main_input" placeholder="Желаемая цена продажи">
+          <input type="text" class="main_input" placeholder="Ваш комментарий">
+
+          <div class="btns">
+            <button type="submit" class="btn_golden btn_coral">Отправить</button>
+            <button type="submit" class="btn_dark btn_coral">Мне нужна помощь</button>
+          </div>
+          <p class="description">
+            Заполняя обратную форму, вы соглашаетесь с нашей <a href="#">Политикой конфиденциальности</a>
+          </p>
+        </form>
+      </div>
     </section>
 
 
