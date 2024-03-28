@@ -33,6 +33,7 @@ bars.onclick = () => {
 // }
 
 let main_selects = document.querySelectorAll(".main_select");
+
 if (main_selects.length) {
   main_selects.forEach((select) => {
     let btn = select.querySelector(".main_select__btn");
@@ -233,6 +234,50 @@ if (top_object_card) {
   }
 }
 
+let apartments_card__two = document.querySelector(".apartments_cards-two");
+if (apartments_card__two) {
+  apartements_slider = new Swiper(apartments_card__two, {
+    slidesPerView: 1.3,
+    spaceBetween: 22,
+    breakpoints: {
+      1300: {
+        slidesPerView: 3,
+      },
+      1150: {
+        slidesPerView: 2,
+        spaceBetween: 48,
+      },
+    },
+  });
+
+  let apartments_cards__ins = document.querySelectorAll(
+    ".apartments .apartments_cards__in"
+  );
+  let apartments_cards__in_paginations = document.querySelectorAll(
+    ".apartments .apartments_cards__in_pagination"
+  );
+  if (apartments_cards__ins.length) {
+    apartments_cards__ins.forEach((card, idx) => {
+      let slide = new Swiper(card, {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        pagination: {
+          el: apartments_cards__in_paginations[idx],
+          clickable: true,
+        },
+      });
+
+      slide.on("touchStart", function () {
+        apartements_slider.detachEvents();
+      });
+
+      slide.on("touchEnd", function () {
+        apartements_slider.attachEvents();
+      });
+    });
+  }
+}
+
 let stars = document.querySelectorAll(".star");
 if (stars.length) {
   stars.forEach((star) => {
@@ -340,22 +385,51 @@ const valMap = [1, 2, 3, 4, 5];
 const slider = document.getElementById("range_slider");
 const labelsContainer = document.getElementById("labels");
 
-slider.addEventListener("input", function (event) {
-  const value = parseInt(event.target.value);
-  labelsContainer.querySelectorAll("label").forEach((label, index) => {
-    if (index === value - 1) {
+if (slider) {
+  slider.addEventListener("input", function (event) {
+    const value = parseInt(event.target.value);
+    labelsContainer.querySelectorAll("label").forEach((label, index) => {
+      if (index === value - 1) {
+        label.classList.add("active");
+      } else {
+        label.classList.remove("active");
+      }
+    });
+  });
+
+  valMap.forEach(function (val, index) {
+    const label = document.createElement("label");
+    label.textContent = val;
+    if (index === 0) {
       label.classList.add("active");
-    } else {
-      label.classList.remove("active");
     }
+    labelsContainer.appendChild(label);
+  });
+}
+
+const priceRange = document.getElementById("priceRange");
+const minSliderHandle = document.querySelector(".min-slider-handle");
+const maxSliderHandle = document.querySelector(".max-slider-handle");
+
+function updateSlider() {
+  const ranges = document.querySelectorAll(".rangeCheck");
+
+  ranges.forEach(function (range) {
+    const dataRange = parseInt(range.getAttribute("data-range"));
+    if (minparse >= dataRange) {
+      range.checked = false;
+    }
+  });
+}
+
+priceRange.addEventListener("input", updateSlider);
+
+const rangeCheckboxes = document.querySelectorAll(".rangeCheck");
+rangeCheckboxes.forEach(function (checkbox) {
+  checkbox.addEventListener("change", function () {
+    updateSlider();
   });
 });
 
-valMap.forEach(function (val, index) {
-  const label = document.createElement("label");
-  label.textContent = val;
-  if (index === 0) {
-    label.classList.add("active");
-  }
-  labelsContainer.appendChild(label);
-});
+// Initial call to set up slider
+updateSlider();
