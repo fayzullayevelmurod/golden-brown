@@ -3666,7 +3666,24 @@ footer {
     color: #fff;
     margin-bottom: 194px;
   }
+  .shadow-box {
+    .animation_img {
+      background: #000;
+      position: relative;
 
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 53%;
+        height: 69%;
+        background: #eaa363;
+        filter: blur(100px);
+      }
+    }
+  }
   .home_card__bottom {
     margin: 200px 0;
   }
