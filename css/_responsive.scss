@@ -1,1946 +1,2352 @@
 @media only screen and (max-width: 1800px) {
-    .investments {
-        .bg_1 {
-            bottom: 32px;
-            width: 700px;
-        }
+  .investments {
+    .bg_1 {
+      bottom: 32px;
+      width: 700px;
     }
+  }
+  .investments_page.investments {
+    margin-bottom: 50px;
+    .bg_1 {
+      top: -125px;
+      width: 900px;
+    }
+  }
 }
 
 @media only screen and (max-width: 1650px) {
-    .investments {
-        .bg_1 {
-            width: 600px;
-            bottom: 60px;
-        }
-
-        .bg_2 {
-            bottom: 270px;
-            width: 200px;
-        }
+  .result_cards {
+    flex-wrap: wrap;
+  }
+  .investments {
+    .bg_1 {
+      width: 600px;
+      bottom: 60px;
     }
-    
-    
-    .object_investments {
-        .bg_2 {
-            height: 329px;
-            width: auto;
-        }
 
-        .main_title {
-            font-size: 70px
-        }
+    .bg_2 {
+      bottom: 270px;
+      width: 200px;
     }
+  }
+  .selling_form-right {
+    padding: 0 50px;
+  }
+
+  .object_investments {
+    .bg_2 {
+      height: 329px;
+      width: auto;
+    }
+
+    .main_title {
+      font-size: 70px;
+    }
+  }
 }
 
 @media only screen and (max-width: 1500px) {
-    .sochi {
-        ul {
-            li {
-                padding-right: 0 !important;
-            }
+  .sochi {
+    ul {
+      li {
+        padding-right: 0 !important;
+      }
 
-            li:nth-child(1) {
-                justify-content: space-between;
-                gap: 0;
-            }
+      li:nth-child(1) {
+        justify-content: space-between;
+        gap: 0;
+      }
 
-            li:not(:nth-child(1)):not(.line) {
-                font-size: 50px;
-            }
-        }
+      li:not(:nth-child(1)):not(.line) {
+        font-size: 50px;
+      }
     }
+  }
 }
 
 @media only screen and (max-width: 1450px) {
-    .consultation {
+  .selling_apartment {
+    gap: 2rem;
+  }
+  .selling_apartment-images div:last-child {
+    margin-left: 50px;
+  }
+  .selling_apartment-info {
+    font-size: 18px;
+  }
+  .consultation {
+    position: relative;
+
+    &__form {
+      &_img {
+        position: absolute;
+        right: -89px;
+        opacity: 0.1;
+      }
+
+      &_content {
+        width: 100%;
         position: relative;
+        padding-top: 0;
+      }
+    }
+  }
+  .investments_page.investments .bg_1 {
+    top: 100px;
+    width: 700px;
+  }
 
-        &__form {
-            &_img {
-                position: absolute;
-                right: -89px;
-                opacity: 0.1;
-            }
-
-            &_content {
-                width: 100%;
-                position: relative;
-                padding-top: 0;
-            }
-        }
+  .investments {
+    .bg_1 {
+      width: 500px;
+      bottom: 100px;
     }
 
-    .investments {
-        .bg_1 {
-            width: 500px;
-            bottom: 100px;
-        }
-
-        .bg_2 {
-            bottom: 500px;
-            width: 150px;
-        }
-
-        p {
-            padding: 0px 30px;
-        }
+    .bg_2 {
+      bottom: 500px;
+      width: 150px;
     }
 
-    .segment {
-        .counter_wrapper {
-            .bg_1 {
-                width: 500px;
-                left: 0;
-                top: 50%;
-                transform: translateX(0) translateY(-50%);
-            }
-
-            .counter_top_block {
-                padding-left: 500px;
-                flex-direction: column;
-                gap: 30px;
-            }
-
-            .counter_bottom_block {
-                flex-direction: column;
-                padding-left: 500px;
-                gap: 30px;
-            }
-        }
+    p {
+      padding: 0px 30px;
     }
+  }
 
-    .example {
-        .card {
-            flex-direction: column;
-            gap: 50px;
+  .segment {
+    .counter_wrapper {
+      .bg_1 {
+        width: 500px;
+        left: 0;
+        top: 50%;
+        transform: translateX(0) translateY(-50%);
+      }
 
-            h2 {
-                width: 100%;
-                text-align: center;
-            }
+      .counter_top_block {
+        padding-left: 500px;
+        flex-direction: column;
+        gap: 30px;
+      }
 
-            p {
-                max-width: 100%;
-                text-align: center;
-            }
-
-            &_top {
-                margin-bottom: 122px;
-                width: 100%;
-                transform: translateX(0);
-            }
-        }
+      .counter_bottom_block {
+        flex-direction: column;
+        padding-left: 500px;
+        gap: 30px;
+      }
     }
+  }
 
-    .object_investments {
-        .bg_2 {
-            height: 280px;
-            width: auto;
-        }
+  .example {
+    .card {
+      flex-direction: column;
+      gap: 50px;
+
+      h2 {
+        width: 100%;
+        text-align: center;
+      }
+
+      p {
+        max-width: 100%;
+        text-align: center;
+      }
+
+      &_top {
+        margin-bottom: 122px;
+        width: 100%;
+        transform: translateX(0);
+      }
     }
+  }
+
+  .object_investments {
+    .bg_2 {
+      height: 280px;
+      width: auto;
+    }
+  }
 }
 
 @media only screen and (max-width: 1400px) {
-    .object_home__slider {
-        .main_container {
-            padding: 0;
-        }
-
-        .slider_wrapper {
-            width: 100%;
-
-            .slider_content {
-                position: static;
-                width: 100%;
-                height: auto;
-
-                img {
-                    width: 100%;
-                }
-
-                &::before {
-                    display: none;
-                }
-            }
-        }
+  .about_apartment-page .economic .economic_boxes {
+    flex-wrap: wrap;
+    margin: 20px;
+  }
+  .about_apartment-page .economic .economic_box {
+    img {
+      width: 100%;
     }
+  }
+  .object_home__slider {
+    .main_container {
+      padding: 0;
+    }
+
+    .slider_wrapper {
+      width: 100%;
+
+      .slider_content {
+        position: static;
+        width: 100%;
+        height: auto;
+
+        img {
+          width: 100%;
+        }
+
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 1350px) {
-    header {
-        .navs {
-            display: none;
-        }
+  header {
+    .navs {
+      display: none;
     }
-
-    .home_card {
-        padding: 67px 0 48px;
-
-        .main_container {
-            padding-left: 55.33px;
-            padding-right: 56.33px;
-        }
-
-        .animation_img {
-            width: 100%;
-
-            img {
-                width: 100%;
-            }
-        }
-
-        &__top, &__bottom {
-            flex-direction: column;
-            gap: 38px;
-            align-items: flex-start;
-
-
-            p {
-                max-width: 100%;
-            }
-        }
-
-        &__top {
-            margin-bottom: 48px;
-        }
+  }
+  .selling_form {
+    & > div:first-child {
+      min-width: 30%;
+      max-width: 50%;
+      img {
+        width: 100%;
+      }
     }
-
-    .segment {
-        .counter_wrapper {
-            .bg_1 {
-                width: 400px;
-            }
-        }
-    }
-
-    .contact {
-        .bg {
-            position: absolute;
-            right: -803px;
-            bottom: 580px;
-            height: 532px;
-            width: auto;
-            opacity: 0.1;
-        }
-
-        &_form {
-            width: 100%;
-
-            &_wrap {
-                flex-direction: column;
-                gap: 50px;
-            }
-        }
-
-        .text_block {
-            width: 100%;
-        }
-    }
-
-    .object_investments {
-        .bg_2 {
-            height: 120px;
-        }
-
-        .main_title {
-            font-size: 40px;
-        }
-    }
-
-    footer {
-        .footer_top {
-            padding-top: 25px;
-            gap: 100px;
-            flex-direction: column;
-
-            .left_block {
-                flex-direction: column;
-            }
-
-            .right_block {
-                align-items: center;
-                width: 100%;
-            }
-        }
-    }
-
-    .partner_home {
-        h1 {
-            font-size: 100px;
-        }
-    }
-
-    .sochi {
-        .content {
-            .left_block {
-                width: 450px;
-            }
-
-            .right_block {
-                width: calc(100% - 450px - 23px);
-            }
-        }
-    }
-}
-
-@media only screen and (max-width: 1250px) {
-    .investments {
-        .bg_1 {
-            width: 400px;
-            bottom: 150px;
-        }
-
-        .bg_2 {
-            bottom: 700px;
-            width: 100px;
-        }
-
-        p {
-            padding: 0px 30px;
-        }
-    }
-
-    .partner_works {
-        margin-bottom: 100px;
-
-        .partner_work_bg {
-            display: none;
-        }
-
-        .adventages_title {
-            max-width: 320px;
-            font-size: 31px;
-            line-height: 90.816%;
-
-            .adventages_title_under {
-                padding-top: 10px;
-                font-size: 22px;
-                line-height: 90.816%;
-            }
-        }
-
-        .partner_works_one {
-            margin-bottom: 0;
-            .main_container {
-                flex-direction: column;
-                align-items: center;
-                gap: 0;
-
-                .mobile_line {
-                    display: block;
-                }
-
-                .partner_works_card {
-                    max-width: 460px;
-                    position: relative;
-                    gap: 5px;
-                    align-items: center;
-                    flex-direction: column;
-                    text-align: center;
-
-                    p {
-                        font-size: 18px;
-                    }
-
-                    .number_line {
-                        display: none;
-                    }
-                }
-
-                .partner_works_card::after {
-                    position: absolute;
-
-                }
-
-                .line_right {
-                    display: none;
-                }
-            }
-        }
-
-        .partner_works_two {
-
-            .main_container {
-                flex-direction: column;
-                align-items: center;
-                gap: 0;
-            }
-
-            .mobile_line {
-                display: block;
-            }
-
-            .line_left {
-                display: none;
-            }
-
-            .partner_works_card {
-                gap: 5px;
-                align-items: center;
-                flex-direction: column;
-                text-align: center;
-
-                p {
-                    font-size: 18px;
-                }
-
-
-                .number_line {
-                    display: none;
-                }
-            }
-
-            .line_right {
-                display: none;
-            }
-        }
-
-        .partner_works_btns {
-            padding-bottom: 0;
-
-            .main_container {
-                flex-direction: column;
-                gap: 20px;
-
-                button {
-                    width: 100%;
-                }
-            }
-        }
-    }
-
-    .object_investments {
-        .bg_2 {
-            height: 230px;
-            width: auto;
-        }
-    }
-}
-
-@media only screen and (max-width: 1200px) {
-    .approach {
-        &_card {
-            overflow: visible;
-
-            .swiper-slide {
-                width: 342px;
-            }
-        }
-    }
-
-    .galerea {
-        .main_img {
-            width: calc(100% - 108px);
-            margin-left: 54px;
-            height: 600px;
-        }
-
-        .card_top {
-            transform: translateY(-8px);
-            padding: 0 38.08px;
-    
-            img {
-                width: 50%;
-                height: 200px;
-                object-fit: cover;
-    
-                &:nth-child(1) {
-                    transform: translateX(-8px);
-                }
-    
-                &:nth-child(2) {
-                    transform: translateX(8px);
-                }
-            }
-        }
-
-        .card_bottom {
-            width: calc(100% - 76.16px);
-            height: 200px;
-            transform: translateY(8px);
-            margin-left: 38.08px;
-        }
-    }
-}
-
-@media only screen and (max-width: 1100px) {
-    .object_home {
-        padding-top: 150px;
-        padding-bottom: 32px;
-
-        h1 {
-            font-size: 50px;
-            line-height: 90%;
-            max-width: 242px;
-            margin-bottom: 18px;
-
-            span {
-                display: none;
-            }
-        }
-
-        ul {
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 8px;
-            margin-bottom: 18px;
-
-            .line {
-                height: 1px;
-                width: 25px;
-                opacity: 1;
-            }
-
-            li {
-                font-size: 14px;
-
-                span {
-                    font-size: 14px;
-                    margin-bottom: 8px;
-                }
-            }
-        }
-
-        .link {
-            width: 208px;
-            gap: 10px;
-            margin: 0 auto;
-
-            span {
-                font-size: 8px;
-                text-align: left;
-            }
-
-            svg {
-                width: 27px;
-                height: auto;
-                flex-shrink: 0;
-            }
-        }
-    }
-}
-
-@media only screen and (max-width: 992px) {
-    .main_text_golden {
-        font-size: 48px;
-        font-weight: 200;
-        line-height: 95%;
-    }
+  }
+  .home_card {
+    padding: 67px 0 48px;
 
     .main_container {
-        padding: 0 20px;
-    }
-
-    .main_title {
-        font-size: 24px;
-    }
-
-    .main_subtitle {
-        font-size: 10px;
-        margin-bottom: 4px;
-    }
-
-    .main_link {
-        span {
-            font-size: 8px;
-        }
-
-        svg {
-            width: 27px;
-            height: auto;
-        }
-    }
-
-    .main_input {
-        padding: 10px 22px;
-        font-size: 10px;
-        height: 22.74px;
-    }
-
-    .main_input_tel {
-        .selected_flag {
-            left: 22px;
-            gap: 6px;
-
-            img {
-                width: 15px;
-                height: auto;
-            }
-
-            svg {
-                width: 5px;
-                height: auto;
-            }
-        }
-    
-        .main_input {
-            padding-left: 55px;
-            height: 22.74px;
-        }
-    }
-
-    .main_select {
-        &__subtitle {
-            font-size: 6px;
-            margin-bottom: 5.28px;
-            margin-left: 27.11px;
-        }
-    
-        &__btn {
-            padding: 10px 22px;
-            gap: 6px;
-            height: 22.74px;
-            
-            span {
-                font-size: 10px;
-            }
-        }
-    
-        &__list {
-            padding: 10px 22px;
-    
-            li {
-                font-size: 10px;
-            }
-            
-            li:not(:last-child) {
-                padding-bottom: 6px;
-            }
-    
-            li:not(:first-child) {
-                padding-top: 6px;
-            }
-        }
-    }
-
-    .main_input_money {
-        padding: 10px 22px;
-        font-size: 10px;
-        height: 22.74px;
-    }
-
-    .btn_golden {
-        height: 29.56px;
-        font-size: 8px;
-    }
-    
-    .btn_dark {
-        height: 29.56px;
-        font-size: 8px;
-    }
-
-    .apartments_cards {
-        .card_item {
-            padding: 23px 23px 30px;
-            border: .446px solid #fff;
-    
-            &_head {
-                margin-bottom: 11.7px;
-                
-                .star {
-                    top: 7.2px;
-                    right: 7.2px;
-
-                    svg {
-                        width: 11px;
-                        height: auto;
-                    }
-                }
-                
-                .swiper-slide {
-                    &::before {
-                        height: 35px;
-                    }
-
-                    &::after {
-                        height: 35px;
-                    }
-                    img {
-                        height: 243px;
-                    }
-                }
-    
-                .apartments_cards__in_pagination {
-                    position: absolute;
-                    gap: 5px;
-    
-                    span {
-                        width: 28px;
-                        height: 1px;
-                    }
-                }
-            }
-    
-            &_type {
-                font-size: 8px;
-                margin-bottom: 11.7px;
-            }
-    
-            &_name {
-                font-size: 12px;
-                margin-bottom: 11.7px;
-            }
-    
-            ul {
-                gap: 4.68px;
-                margin-bottom: 11.7px;
-    
-                li {
-                    font-size: 8px;
-                }
-            }
-    
-            &__link {
-                display: inline-flex;
-                align-items: center;
-                gap: 4.68px;
-    
-                span {
-                    font-size: 8px;
-                }
-    
-                @keyframes svgAnimation {
-                    0% {
-                        transform: translateX(0);
-                    }
-                    30% {
-                        transform: translateX(15px);
-                    }
-                    60% {
-                        transform: translateX(0);
-                    }
-                    100% {
-                        transform: translateX(0);
-                    }
-                }
-    
-                svg {
-                    width: 23px;
-                    height: auto;
-                }
-            }
-        }
+      padding-left: 55.33px;
+      padding-right: 56.33px;
     }
 
     .animation_img {
-        img {
-            height: auto;
-        }
-    }
-    
-    header {
-        padding-top: 21px;
+      width: 100%;
 
-        .logo {
-            img {
-                width: 52px;
-                height: auto;
-            }
-        }
-
-        .lang {
-            &_selected {
-                font-size: 8px;
-            }
-
-            &_list {
-                padding: 12px;
-
-                li {
-                    font-size: 8px;
-                }
-            }
-
-            @keyframes langActive {
-                0% {
-                    height: 1px;
-                    padding-top: 0;
-                    padding-bottom: 0;
-                    opacity: 0;
-                }
-    
-                60% {
-                    opacity: 1;
-                    height: 1px;
-                    padding-top: 0;
-                    padding-bottom: 0;
-                }
-    
-                100% {
-                    height: 66.8px;
-                }
-            }
-    
-            @keyframes langNoActive {
-                0% {
-                    display: flex;
-                    height: 66.8px;
-                }
-    
-                30% {
-                    display: flex;
-                    opacity: 1;
-                    height: 1px;
-                    padding-top: 0;
-                    padding-bottom: 0;
-                }
-    
-                100% {
-                    display: flex;
-                    height: 1px;
-                    padding-top: 0;
-                    padding-bottom: 0;
-                    opacity: 0;
-                }
-            }
-        }
-
-        .bars {
-            span {
-                width: 14px;
-            }
-        }
-
-        .header_menu {
-            &_content {
-                width: 285px;
-                padding-top: 80px;
-                gap: 21px;
-
-                .title {
-                    font-size: 12px;
-                    margin-bottom: 12px;
-                }
-
-                ul {
-                    gap: 10px;
-                    margin-bottom: 25px;
-                }
-            }
-
-            &_link {
-                font-size: 8px;
-            }
-
-            &_logo {
-                img {
-                    width: 52px;
-                    height: auto;
-                }
-            }
-        }
+      img {
+        width: 100%;
+      }
     }
 
-    @keyframes linkAnimation {
-        0% {
-            transform: translateY(0);
-        }
-    
-        50% {
-            transform: translateY(20px);
-        }
-    
-        100% {
-            transform: translateY(0);
-        }
+    &__top,
+    &__bottom {
+      flex-direction: column;
+      gap: 38px;
+      align-items: flex-start;
+
+      p {
+        max-width: 100%;
+      }
     }
 
-    .home {
-        height: auto;
-        .main_container {
-            padding-top: 98px;
-            padding-bottom: 48px;
-        }
+    &__top {
+      margin-bottom: 48px;
+    }
+  }
 
-        p {
-            font-size: 8px;
-            margin-bottom: 47px;
-            order: 2;
-        }
+  .segment {
+    .counter_wrapper {
+      .bg_1 {
+        width: 400px;
+      }
+    }
+  }
 
-        h1 {
-            font-size: 20px;
-            order: 1;
-            margin-bottom: 4px;
-        }
-
-
-        a {
-            order: 3;
-            svg {
-                width: 16px;
-                height: auto;
-            }
-        }
+  .contact {
+    .bg {
+      position: absolute;
+      right: -803px;
+      bottom: 580px;
+      height: 532px;
+      width: auto;
+      opacity: 0.1;
     }
 
-    .home_card {
-        &__top, &__bottom {
-            h2 {
-                max-width: 216px;
-                margin-bottom: 14px;
-            }
+    &_form {
+      width: 100%;
 
-            p {
-                font-size: 10px;
-                max-width: 100%;
-            }
-        }
-
+      &_wrap {
+        flex-direction: column;
+        gap: 50px;
+      }
     }
 
-    .apartments {
-        padding: 48px 0 71px;
+    .text_block {
+      width: 100%;
+    }
+  }
+
+  .object_investments {
+    .bg_2 {
+      height: 120px;
     }
 
-    .consultation {
-        padding: 48px  0 44px;
-
-        &__form {
-            margin-top: 24px;
-
-            &_img {
-                width: 188px;
-            }
-
-            &_content {
-                .inputs {
-                    gap: 22px;
-                    margin-bottom: 22px;
-                }
-            }
-
-            p {
-                font-size: 6px;
-                width: 140px;
-                margin-bottom: 22px;
-            }
-
-            .buttons {
-                gap: 10.91px;
-            }
-        }
+    .main_title {
+      font-size: 40px;
     }
-    
-    .approach {
-        padding: 48px 0;
+  }
 
-        .main_title {
-            margin-bottom: 24px;
-        }
+  footer {
+    .footer_top {
+      padding-top: 25px;
+      gap: 100px;
+      flex-direction: column;
 
-        &_card {
-            .swiper-slide {
-                width: 160px;
-            }
+      .left_block {
+        flex-direction: column;
+      }
 
-            &__item {
-                height: 235px;
-                overflow: hidden;
+      .right_block {
+        align-items: center;
+        width: 100%;
+      }
+    }
+  }
 
-                .description {
-                    font-size: 8px;
-                    padding: 21px;
-                }
-            }
-        }
+  .partner_home {
+    h1 {
+      font-size: 100px;
+    }
+  }
 
-        &__link {
-            margin-top: 48.11px;
-            gap: 3.93px;
+  .sochi {
+    .content {
+      .left_block {
+        width: 450px;
+      }
 
-            span {
-                font-size: 8px;
-            }
+      .right_block {
+        width: calc(100% - 450px - 23px);
+      }
+    }
+  }
+}
 
-            svg {
-                width: 20px;
-                height: auto;
-            }
-        }
+@media only screen and (max-width: 1250px) {
+  .investments {
+    .bg_1 {
+      width: 400px;
+      bottom: 150px;
     }
 
-    .top_object {
-        padding: 48px 0;
-
-        .apartments_cards {
-            margin-top: 24px;
-
-            .card_item {
-                .links {
-                    gap: 11.69px;
-                    
-                    &_item {
-                        gap: 4.68px;
-
-                        span {
-                            font-size: 8px;
-                        }
-
-                        svg {
-                            width: 23px;
-                            height: auto;
-                        }
-                    }
-                }
-            }
-        }
+    .bg_2 {
+      bottom: 700px;
+      width: 100px;
     }
 
-    .galerea {
-        .main_title {
-            margin-bottom: 24px;
-        }
+    p {
+      padding: 0px 30px;
+    }
+  }
+  .investments_page.top_object .architecture_book-img {
+    right: 0;
+  }
+  .partner_works {
+    margin-bottom: 100px;
 
-        .main_img {
-            height: 181px;
-        }
-
-        .card_top {
-            transform: translateY(calc(-8px / 2));
-    
-            img {
-                height: 68px;
-    
-                &:nth-child(1) {
-                    transform: translateX(calc(-8px / 2));
-                }
-    
-                &:nth-child(2) {
-                    transform: translateX(calc(8px / 2));
-                }
-            }
-        }
-
-        .card_bottom {
-            height: 86px;
-            transform: translateY(8px);
-            margin-left: 38.08px;
-            margin-top: -4px;
-        }
+    .partner_work_bg {
+      display: none;
     }
 
-    .investments {
-        padding: 71px 0 48px;
+    .adventages_title {
+      max-width: 320px;
+      font-size: 31px;
+      line-height: 90.816%;
 
-        .bg_1 {
-            width: 235px;
-            bottom: 43px;
-            left: -73px;
-        }
-
-        .bg_2 {
-            bottom: 190px;
-            width: 60px;
-        }
-
-        p {
-            padding: 0px 30px;
-            font-size: 8px;
-            margin: 14px 0 24px;
-        }
-
-        .text_block {
-            max-width: 100%;
-            margin: 0 auto;
-            transform: translateX(0);
-    
-            .title {
-                font-size: 8px;
-                margin-bottom: 4px;
-                padding-left: 119px;
-            }
-    
-            ul {
-                gap: 4px;
-                margin-bottom: 40px;
-                padding-right: 0px;
-                padding-left: 119px;
-    
-                li {
-                    font-size: 8px;
-                    padding-left: 7px;
-    
-                    &::before {
-                        width: 3px;
-                        height: 3px;
-                    }
-                }
-            }
-    
-            .btns {
-                gap: 10.91px;
-    
-                a {
-                    width: 100%;
-                }
-            }
-        }
+      .adventages_title_under {
+        padding-top: 10px;
+        font-size: 22px;
+        line-height: 90.816%;
+      }
     }
 
-    .segment {
-        padding-bottom: 48px;
+    .partner_works_one {
+      margin-bottom: 0;
+      .main_container {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
 
-        .main_title {
-            margin-bottom: 24px;
+        .mobile_line {
+          display: block;
         }
 
-        .counter_wrapper {
-            .bg_1 {
-                width: 241px;
-                left: -44px;
-                top: 50%;
-                transform: translateX(0) translateY(-50%);
-            }
+        .partner_works_card {
+          max-width: 460px;
+          position: relative;
+          gap: 5px;
+          align-items: center;
+          flex-direction: column;
+          text-align: center;
 
-            .counter_top_block {
-                padding-left: 140px;
-                flex-direction: column;
-                gap: 8px;
-                margin-bottom: 8px;
-            }
-
-            .counter_bottom_block {
-                flex-direction: column-reverse;
-                padding-left: 140px;
-                gap: 8px;
-            }
-
-            .name {
-                font-size: 21.43px;
-                margin-bottom: 4px;
-
-                .small {
-                    font-size: 16px;
-                }
-            }
-
-            .description {
-                font-size: 8px;
-            }
-        }
-
-        .btns {
-            margin-top: 24px;
-            gap: 10.91px;
-        }
-    }
-
-    .example {
-        padding: 48px 0;
-
-        .main_title {
-            margin-bottom: 40.96px;
-        }
-
-        .card {
-            gap: 34px;
-
-            .animation_img {
-                width: 100%;
-                img {
-                    width: 100%;
-                }
-            }
-
-            h2 {
-                font-size: 36px;
-                margin-bottom: 4px;
-                text-align: left;
-            }
-
-            p {
-                font-size: 10px;
-                text-align: left;
-            }
-
-            &_top {
-                margin-bottom: 40px;
-            }
-        }
-    }
-
-    .contact {
-        .main_container {
-            padding: 48px 54px;
-        }
-
-        .main_title {
-            margin-bottom: 24px;
-        }
-
-        .text_block {
-            .title {
-                font-size: 8px;
-                max-width: 149px;
-                margin-bottom: 8px;
-            }
-
-            ul {
-                gap: 8px;
-
-                li {
-                    font-size: 8px;
-                    padding-left: 7px;
-
-                    &::before {
-                        width: 3px;
-                        height: 3px;
-                    }
-                }
-            }
-        }
-
-        .bg {
-            right: -348px;
-            bottom: 118px;
-            height: 247px;
-        }
-
-        &_form {
-            width: 100%;
-            gap: 22px;
-
-            &_wrap {
-                gap: 24px;
-            }
-
-            .btn_golden {
-                width: 100%;
-            }
-
-            .description {
-                font-size: 6px;
-                width: 139px;
-            }
-        }
-
-        .text_block {
-            width: 100%;
-        }
-    }
-
-    .working {
-        padding-bottom: 11.59px;
-
-        .bg {
-            left: -63px;
-            width: calc(100% + 79px);
-            height: 225px;
-        }
-    
-        .main_title {
-            margin-bottom: 12px;
-        }
-    
-        .title {
-            font-size: 24px;
-            margin-bottom: 8px;
-        }
-    
-        .description {
-            font-size: 8px;
-            margin-bottom: 8px;
-            max-width: 147px;
-        }
-    
-        .description.first {
-            font-style: italic;
-            max-width: 152px;
-            font-weight: 400;
-        }
-    
-        .description.last {
-            margin-bottom: 0;
-            max-width: 147px;
-        }
-    
-        .links {
-            flex-direction: column;
-            position: absolute;
-            right: 29px;
-            bottom: 40px;
-            gap: 8px;
-
-            a {
-                height: 8px;
-
-                img {
-                    width: 8px;
-                    height: auto;
-                }
-            }
-        }
-    }
-
-    footer {
-        padding: 25px 0;
-
-        .right_block {
-            .main_input {
-                font-size: 18px;
-                padding-bottom: 15px;
-            }
-
-            .btn_golden {
-                padding: 20px;
-                color: #2A2A2A;
-                font-family: 'Montserrat',sans-serif;
-                font-size: 18px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
-                background-color: #EAA363;;
-            }
-        }
-
-        .footer_top {
-            margin-bottom: 21px;
-
-            .right_block {
-                align-items: start;
-                gap: 21px;
-
-                .btn_golden {
-                    width: 100%;
-                    
-                }
-
-                .description {
-                    font-size: 14px;
-                    // width: 100%;
-                    margin: 0;
-                    width: 243px;
-
-                }
-
-                .links {
-                    margin: 70px auto 100px auto;
-                    gap: 22px;
-
-                    a {
-                        height: 8px;
-
-                        img {
-                            width: 29px;
-                            height: auto;
-                        }
-                    }
-                }
-            }
-        }
-
-        .footer_bottom {
-            gap: 4px;
-
-            img {
-                width: 220px;
-                height: auto;
-            }
-
-            p {
-                margin-top: 42px;
-                font-size: 12px;
-            }
-        }
-    }
-
-    .partner_home {
-
-        .main_container {
-            .partner_home_bg {
-                top: 57px;
-                width: 211px;
-                height: 438px;
-                right: -105px;
-                object-fit: cover;
-            }
-        }
-
-        .partner_home_bg_right {
-            display: none;
-        }
-
-        .partner_home_bg_left {
-            top: 37px;
-            left: 0;
-            height: 209px;
-        }
-
-        .partner_home_btns {
-            flex-direction: column;
-            gap: 20px;
-
-            .partner_btn {
-                gap: 10px;
-                font-size: 18px;
-            }
-        }
-
-        h1 {
-            padding-top: 0;
-            font-size: 35px;
-            line-height: 90.816%;
-            margin-bottom: 20px;
-        }
-        
-        p {
+          p {
             font-size: 18px;
-            margin-bottom: 34px;
+          }
+
+          .number_line {
+            display: none;
+          }
         }
+
+        .partner_works_card::after {
+          position: absolute;
+        }
+
+        .line_right {
+          display: none;
+        }
+      }
     }
 
-    .partner_statistic {
-        padding-bottom: 137px;
-        .main_container {
-            flex-direction: column;
+    .partner_works_two {
+      .main_container {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+      }
+
+      .mobile_line {
+        display: block;
+      }
+
+      .line_left {
+        display: none;
+      }
+
+      .partner_works_card {
+        gap: 5px;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+
+        p {
+          font-size: 18px;
         }
 
-        .partner_statistic_card {
-            padding: 50px 21px;
-
-            h6 {
-                font-size: 70px;
-                span {
-                    font-size: 25px;
-                }
-            }
-            .left_line {
-                width: 100px;
-                height: 5px;
-                position: absolute;
-                left: 0;
-                right: 0;
-                margin: 0 auto;
-                top: 0;
-                bottom: auto;
-                border-radius: 0 0 20px 20px;
-            }
-    
-            .right_line {
-                width: 100px;
-                height: 5px;
-                position: absolute;
-                left: 0;
-                right: 0;
-                margin: 0 auto;
-                top: auto;
-                bottom: 0;
-                border-radius: 20px 20px 0 0;
-            }
+        .number_line {
+          display: none;
         }
+      }
+
+      .line_right {
+        display: none;
+      }
     }
 
-    .partner_calculation {
-        .partner_calculation_in {
-            flex-direction: column;
+    .partner_works_btns {
+      padding-bottom: 0;
+
+      .main_container {
+        flex-direction: column;
+        gap: 20px;
+
+        button {
+          width: 100%;
         }
+      }
+    }
+  }
 
-        .partner_calculation_right {
-            width: 100%;
-        }
+  .object_investments {
+    .bg_2 {
+      height: 230px;
+      width: auto;
+    }
+  }
+}
 
-        .calculation_title {
-            font-size: 60px;
-            line-height: 90.816%;
-            margin-bottom: 30px;
-        }
+@media only screen and (max-width: 1200px) {
+  .approach {
+    &_card {
+      overflow: visible;
 
+      .swiper-slide {
+        width: 342px;
+      }
+    }
+  }
 
-
-        .partner_calculation_left {
-            h6 {
-                font-size: 27px;
-            }
-
-            p,span {
-                font-size: 18px;
-            }
-    
-            p {
-                margin-bottom: 30px;
-            }
-    
-            span {
-                margin-bottom: 50px;
-            }
-
-        }
-
+  .galerea {
+    .main_img {
+      width: calc(100% - 108px);
+      margin-left: 54px;
+      height: 600px;
     }
 
-    .adventages {
-        margin-bottom: 185px;
+    .card_top {
+      transform: translateY(-8px);
+      padding: 0 38.08px;
 
-        .adventages_title {
-            margin-bottom: 58px;
-            max-width: 313px;
-            font-size: 34px;
-            line-height: 90.816%;
+      img {
+        width: 50%;
+        height: 200px;
+        object-fit: cover;
 
-            .adventages_title_under {
-                padding-top: 10px;
-                font-size: 22px;
-                line-height: 90.816%;
-            }
+        &:nth-child(1) {
+          transform: translateX(-8px);
         }
 
-
-        .adventages_in_one {
-            display: block;
-            flex-direction: column;
-            gap: 40px;
-
-            .adventages_right_bg {
-                display: none;
-            }
-
-            .adventages_mobile_bg_1 {
-                display: block;
-            }
-
-            .adventages_card {
-                text-align: center;
-                height: 208px;
-                margin-bottom: 40px;
-
-                .adventages_card_icon {
-                    left: 0;
-                    right: 0;
-                    margin: 0 auto;
-                }
-            }
+        &:nth-child(2) {
+          transform: translateX(8px);
         }
-        .adventages_in_two {
-            margin-top: 0;
-            flex-direction: column;
-            gap: 40px;
-            display: block;
-
-            .adventages_left_bg {
-                display: none;
-            }
-
-            .adventages_mobile_bg_2 {
-                display: block;
-            }
-
-            .adventages_card {
-                text-align: center;
-                margin-bottom: 40px;
-                height: 208px;
-
-                .adventages_card_icon {
-                    left: 0;
-                    right: 0;
-                    margin: 0 auto;
-                }
-            }
-
-            .adventages_card:last-child {
-                margin-bottom: 0;
-            }
-        }
+      }
     }
 
-    .object_home {
-        padding-top: 88px;
+    .card_bottom {
+      width: calc(100% - 76.16px);
+      height: 200px;
+      transform: translateY(8px);
+      margin-left: 38.08px;
+    }
+  }
+  .investments_section {
+    .calculator_boxes {
+      gap: 1rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .object_home {
+    padding-top: 150px;
+    padding-bottom: 32px;
+
+    h1 {
+      font-size: 50px;
+      line-height: 90%;
+      max-width: 242px;
+      margin-bottom: 18px;
+
+      span {
+        display: none;
+      }
     }
 
-    .object_home__slider {
-        .slider_wrapper {
-            .spiper_pagination {
-                height: 46px;
+    ul {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+      margin-bottom: 18px;
 
-                span {
-                    height: 2px;
-                    width: 37px;
-                }
-            }
+      .line {
+        height: 1px;
+        width: 25px;
+        opacity: 1;
+      }
+
+      li {
+        font-size: 14px;
+
+        span {
+          font-size: 14px;
+          margin-bottom: 8px;
         }
+      }
     }
 
-    .about_project {
-        padding-top: 40px;
+    .link {
+      width: 208px;
+      gap: 10px;
+      margin: 0 auto;
 
-        .logo {
-            width: 100%;
-            object-fit: contain;
-            height: 100px;
-            margin-bottom: 33px;
-        }
+      span {
+        font-size: 8px;
+        text-align: left;
+      }
 
-        .main_container {
-            .star {
-                width: 259px;
-                height: auto;
-                right: -129.5px;
-                top: 110px;
-            }
-        }
+      svg {
+        width: 27px;
+        height: auto;
+        flex-shrink: 0;
+      }
+    }
+  }
+  .investments_section {
+    padding: 100px 0 57px 0;
+    .calculator_boxes {
+      flex-wrap: wrap;
+      margin-top: 50px;
+    }
+    .investments_calculator-select {
+      flex: 1 1 0%;
+    }
+    .investments_calculator .choos_pay-box {
+      width: 100%;
+      min-width: 220px;
+    }
+    .investments_calculator .choos_pay-box-img {
+      object-fit: cover;
+    }
+    .investments_calculator,
+    .how_many-apartments {
+      width: 100%;
+      max-width: 100%;
+      .select_tip {
+        justify-content: space-between;
+      }
+    }
+    .main_title {
+      font-size: 50px;
+    }
+    .incom_box {
+      padding: 20px 30px;
+    }
+  }
+}
+@media screen and (max-width: 1050px) {
+  .about_apartment-page .services_boxes .services_box-title {
+    font-size: 25px;
+    line-height: 35px;
+    margin-bottom: 30px;
+    text-align: left;
+    margin-left: 0;
+  }
+  .about_apartment-page .services_boxes .services_box {
+    padding: 20px;
+    height: 386px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .main_text_golden {
+    font-size: 48px;
+    font-weight: 200;
+    line-height: 95%;
+  }
+  .about_apartment-page .services_boxes .services_box-info {
+    font-size: 16px;
+    line-height: 23px;
+  }
+  .about_apartment-page .main_container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .home_card.selling_home-card .home_card__bottom {
+    margin: 100px 0;
+  }
+  .about_apartment-statistiks h3 {
+    font-size: 23px;
+    line-height: 30px;
+  }
+  .about_apartment-statistiks p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 15px;
+  }
+  .about_apartment-statistiks {
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .selling_form-right .main_input_tel .selected_flag {
+    top: 15%;
+  }
+  .selling_apartment {
+    flex-wrap: wrap;
+  }
+  .selling_apartment-images > div {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+  .investments_page .bottom_links {
+    flex-wrap: wrap;
+    gap: 1rem;
+    row-gap: 0;
+    margin-top: 2rem;
+  }
+  .investments_page .bottom_links .links_item {
+    font-size: 16px;
+    svg {
+      width: 35px;
+    }
+  }
+  .main_title-two,
+  .selling_apartments .main_title {
+    font-size: 24px !important;
+    line-height: 34px !important;
+  }
+  .main_subtitle-two {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .selling_apartments {
+    padding-top: 100px;
+  }
+  .investments_page.top_object {
+    padding-top: 50px;
+  }
+  .investments_page.investments .bg_1 {
+    width: 400px;
+    top: -70px;
+  }
+  .investments_page .main_title {
+    font-size: 24px;
+    line-height: 34px;
+  }
 
+  .main_container {
+    padding: 0 20px;
+  }
 
-        .content {
-            flex-direction: column;
-            gap: 24px;
+  .main_title {
+    font-size: 24px;
+  }
 
-            .left_block {
-                width: 100%;
+  .main_subtitle {
+    font-size: 10px;
+    margin-bottom: 4px;
+  }
 
-                h2 {
-                    font-size: 40px;
-                    text-align: left;
-                    margin-bottom: 50px;
-                }
-
-                ul {
-                    gap: 20px;
-
-                    li {
-                        font-size: 18px;
-                    }
-                }
-                
-                .stars {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    gap: 18px;
-                    margin-top: 24px;
-                    width: 100%;
-
-                    img {
-                        width: 23px;
-                        height: auto;
-                    }
-
-                    .big {
-                        width: 35px;
-                    }
-                }
-            }
-
-            .right_block {
-                padding-top: 0;
-                
-                .description {
-                    font-size: 18px;
-                    margin-bottom: 18px;
-                }
-
-                h3 {
-                    font-size: 20px;
-                    max-width: 300px;
-                    margin-bottom: 24px;
-                }
-            }
-        }
-
-        .image_block {
-            flex-direction: column;
-            padding-bottom: 0;
-
-            img {
-                width: 100%;
-                margin-bottom: 18px;
-            }
-
-            .text {
-                font-size: 14px;
-                margin-bottom: 48px !important;
-            }
-
-            .left_block {
-                padding-top: 0;
-                text-align: center;
-                width: 100%;
-            }
-
-            .right_block {
-                width: 100%;
-                text-align: center;
-            }
-        }
+  .main_link {
+    span {
+      font-size: 8px;
     }
 
-    .sochi {
-        padding-bottom: 96px;
+    svg {
+      width: 27px;
+      height: auto;
+    }
+  }
 
-        h2 {
-            font-size: 40px;
-            margin-bottom: 18px;
-            text-align: left;
+  .main_input {
+    padding: 10px 22px;
+    font-size: 10px;
+    height: 22.74px;
+  }
+
+  .main_input_tel {
+    .selected_flag {
+      left: 22px;
+      gap: 6px;
+
+      img {
+        width: 15px;
+        height: auto;
+      }
+
+      svg {
+        width: 5px;
+        height: auto;
+      }
+    }
+
+    .main_input {
+      padding-left: 55px;
+      height: 22.74px;
+    }
+  }
+
+  .main_select {
+    &__subtitle {
+      font-size: 6px;
+      margin-bottom: 5.28px;
+      margin-left: 27.11px;
+    }
+
+    &__btn {
+      padding: 10px 22px;
+      gap: 6px;
+      height: 22.74px;
+
+      span {
+        font-size: 10px;
+      }
+    }
+
+    &__list {
+      padding: 10px 22px;
+
+      li {
+        font-size: 10px;
+      }
+
+      li:not(:last-child) {
+        padding-bottom: 6px;
+      }
+
+      li:not(:first-child) {
+        padding-top: 6px;
+      }
+    }
+  }
+
+  .main_input_money {
+    padding: 10px 22px;
+    font-size: 10px;
+    height: 22.74px;
+  }
+
+  .btn_golden {
+    height: 29.56px;
+    font-size: 8px;
+  }
+
+  .btn_dark {
+    height: 29.56px;
+    font-size: 8px;
+  }
+
+  .apartments_cards,
+  .apartments_cards-two {
+    .card_item {
+      padding: 23px 23px 30px;
+      border: 0.446px solid #fff;
+
+      &_head {
+        margin-bottom: 11.7px;
+
+        .star {
+          top: 7.2px;
+          right: 7.2px;
+
+          svg {
+            width: 11px;
+            height: auto;
+          }
         }
 
-        .content {
-            flex-direction: column;
-            margin-bottom: 18px;
-            
-            .left_block {
-                width: 100%;
+        .swiper-slide {
+          &::before {
+            height: 35px;
+          }
 
-                .mobile {
-                    display: block;
-                }
+          &::after {
+            height: 35px;
+          }
+          img {
+            height: 243px;
+          }
+        }
 
-                .subtitle {
-                    color: #161616;
-                    font-size: 18px;
-                    font-weight: 300;
-                    line-height: normal;
-                    text-transform: uppercase;
-                    opacity: 0.4;
-                    margin-bottom: 25px;
-                    text-align: left;
-                }
+        .apartments_cards__in_pagination {
+          position: absolute;
+          gap: 5px;
 
-                .description {
-                    color: #161616;
-                    font-size: 20px;
-                    font-weight: 400;
-                    line-height: normal;
-                    text-transform: uppercase;
-                    margin-bottom: 18px;
-                    text-align: left;
-                }
+          span {
+            width: 28px;
+            height: 1px;
+          }
+        }
+      }
 
-                img.mobile {
-                    width: 100%;
-                    margin: 24px 0;
-                }
+      &_type {
+        font-size: 8px;
+        margin-bottom: 11.7px;
+      }
 
-                .main_link {
-                    margin: 18px 0 23px;
+      &_name {
+        font-size: 12px;
+        margin-bottom: 11.7px;
+      }
 
-                }
-            }
+      ul {
+        gap: 4.68px;
+        margin-bottom: 11.7px;
 
-            .right_block {
-                display: none;
-            }
+        li {
+          font-size: 8px;
+        }
+      }
+
+      &__link {
+        display: inline-flex;
+        align-items: center;
+        gap: 4.68px;
+
+        span {
+          font-size: 8px;
+        }
+
+        @keyframes svgAnimation {
+          0% {
+            transform: translateX(0);
+          }
+          30% {
+            transform: translateX(15px);
+          }
+          60% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(0);
+          }
+        }
+
+        svg {
+          width: 23px;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  .animation_img {
+    img {
+      height: auto;
+    }
+  }
+
+  header {
+    padding-top: 21px;
+
+    .logo {
+      img {
+        width: 52px;
+        height: auto;
+      }
+    }
+
+    .lang {
+      &_selected {
+        font-size: 8px;
+      }
+
+      &_list {
+        padding: 12px;
+
+        li {
+          font-size: 8px;
+        }
+      }
+
+      @keyframes langActive {
+        0% {
+          height: 1px;
+          padding-top: 0;
+          padding-bottom: 0;
+          opacity: 0;
+        }
+
+        60% {
+          opacity: 1;
+          height: 1px;
+          padding-top: 0;
+          padding-bottom: 0;
+        }
+
+        100% {
+          height: 66.8px;
+        }
+      }
+
+      @keyframes langNoActive {
+        0% {
+          display: flex;
+          height: 66.8px;
+        }
+
+        30% {
+          display: flex;
+          opacity: 1;
+          height: 1px;
+          padding-top: 0;
+          padding-bottom: 0;
+        }
+
+        100% {
+          display: flex;
+          height: 1px;
+          padding-top: 0;
+          padding-bottom: 0;
+          opacity: 0;
+        }
+      }
+    }
+
+    .bars {
+      span {
+        width: 14px;
+      }
+    }
+
+    .header_menu {
+      &_content {
+        width: 285px;
+        padding-top: 80px;
+        gap: 21px;
+
+        .title {
+          font-size: 12px;
+          margin-bottom: 12px;
         }
 
         ul {
-            li{
-                &:nth-child(1) {
-                    font-size: 24px;
-                    font-weight: 600;
-                    margin-bottom: 8px;
-
-                    div {
-                        &:nth-child(2) {
-                            display: none;
-                        }
-                    }
-                }
-                
-                &:nth-child(2) {
-                    display: none;
-                }
-
-                &:not(:nth-child(1)):not(.line) {
-                    font-size: 18px;
-                    font-weight: 400;
-
-                    span {
-                        font-size: 8px;
-                        margin-left: 7px;
-                        transform: translateY(-14px);
-                    }
-                }
-            }
-
-            .line {
-                margin: 18px 0 20px !important;
-            }
+          gap: 10px;
+          margin-bottom: 25px;
         }
+      }
+
+      &_link {
+        font-size: 8px;
+      }
+
+      &_logo {
+        img {
+          width: 52px;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  @keyframes linkAnimation {
+    0% {
+      transform: translateY(0);
     }
 
-    .object_consultation {
+    50% {
+      transform: translateY(20px);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .home {
+    height: auto;
+    .main_container {
+      padding-top: 98px;
+      padding-bottom: 48px;
+    }
+
+    p {
+      font-size: 8px;
+      margin-bottom: 47px;
+      order: 2;
+    }
+
+    h1 {
+      font-size: 20px;
+      order: 1;
+      margin-bottom: 4px;
+    }
+
+    a {
+      order: 3;
+      svg {
+        width: 16px;
+        height: auto;
+      }
+    }
+  }
+
+  .home_card {
+    &__top,
+    &__bottom {
+      h2 {
+        max-width: 216px;
+        margin-bottom: 14px;
+      }
+
+      p {
+        font-size: 10px;
+        max-width: 100%;
+      }
+    }
+  }
+
+  .apartments {
+    padding: 48px 0 71px;
+  }
+
+  .consultation {
+    padding: 48px 0 44px;
+
+    &__form {
+      margin-top: 24px;
+
+      &_img {
+        width: 188px;
+      }
+
+      &_content {
+        .inputs {
+          gap: 22px;
+          margin-bottom: 22px;
+        }
+      }
+
+      p {
+        font-size: 6px;
+        width: 140px;
+        margin-bottom: 22px;
+      }
+
+      .buttons {
+        gap: 10.91px;
+      }
+    }
+  }
+
+  .approach {
+    padding: 48px 0;
+
+    .main_title {
+      margin-bottom: 24px;
+    }
+
+    &_card {
+      .swiper-slide {
+        width: 160px;
+      }
+
+      &__item {
+        height: 235px;
+        overflow: hidden;
+
+        .description {
+          font-size: 8px;
+          padding: 21px;
+        }
+      }
+    }
+
+    &__link {
+      margin-top: 48.11px;
+      gap: 3.93px;
+
+      span {
+        font-size: 8px;
+      }
+
+      svg {
+        width: 20px;
+        height: auto;
+      }
+    }
+  }
+
+  .top_object {
+    padding: 48px 0;
+
+    .apartments_cards,
+    .apartments_cards-two {
+      margin-top: 24px;
+
+      .card_item {
+        .links {
+          gap: 11.69px;
+
+          &_item {
+            gap: 4.68px;
+
+            span {
+              font-size: 8px;
+            }
+
+            svg {
+              width: 23px;
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .galerea {
+    .main_title {
+      margin-bottom: 24px;
+    }
+
+    .main_img {
+      height: 181px;
+    }
+
+    .card_top {
+      transform: translateY(calc(-8px / 2));
+
+      img {
+        height: 68px;
+
+        &:nth-child(1) {
+          transform: translateX(calc(-8px / 2));
+        }
+
+        &:nth-child(2) {
+          transform: translateX(calc(8px / 2));
+        }
+      }
+    }
+
+    .card_bottom {
+      height: 86px;
+      transform: translateY(8px);
+      margin-left: 38.08px;
+      margin-top: -4px;
+    }
+  }
+
+  .investments {
+    padding: 71px 0 48px;
+
+    .bg_1 {
+      width: 235px;
+      bottom: 43px;
+      left: -73px;
+    }
+
+    .bg_2 {
+      bottom: 190px;
+      width: 60px;
+    }
+
+    p {
+      padding: 0px 30px;
+      font-size: 8px;
+      margin: 14px 0 24px;
+    }
+
+    .text_block {
+      max-width: 100%;
+      margin: 0 auto;
+      transform: translateX(0);
+
+      .title {
+        font-size: 8px;
+        margin-bottom: 4px;
+        padding-left: 119px;
+      }
+
+      ul {
+        gap: 4px;
+        margin-bottom: 40px;
+        padding-right: 0px;
+        padding-left: 119px;
+
+        li {
+          font-size: 8px;
+          padding-left: 7px;
+
+          &::before {
+            width: 3px;
+            height: 3px;
+          }
+        }
+      }
+
+      .btns {
+        gap: 10.91px;
+
+        a {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .segment {
+    padding-bottom: 48px;
+
+    .main_title {
+      margin-bottom: 24px;
+    }
+
+    .counter_wrapper {
+      .bg_1 {
+        width: 241px;
+        left: -44px;
+        top: 50%;
+        transform: translateX(0) translateY(-50%);
+      }
+
+      .counter_top_block {
+        padding-left: 140px;
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 8px;
+      }
+
+      .counter_bottom_block {
+        flex-direction: column-reverse;
+        padding-left: 140px;
+        gap: 8px;
+      }
+
+      .name {
+        font-size: 21.43px;
+        margin-bottom: 4px;
+
+        .small {
+          font-size: 16px;
+        }
+      }
+
+      .description {
+        font-size: 8px;
+      }
+    }
+
+    .btns {
+      margin-top: 24px;
+      gap: 10.91px;
+    }
+  }
+
+  .example {
+    padding: 48px 0;
+
+    .main_title {
+      margin-bottom: 40.96px;
+    }
+
+    .card {
+      gap: 34px;
+
+      .animation_img {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+
+      h2 {
+        font-size: 36px;
+        margin-bottom: 4px;
+        text-align: left;
+      }
+
+      p {
+        font-size: 10px;
+        text-align: left;
+      }
+
+      &_top {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  .contact {
+    .main_container {
+      padding: 48px 54px;
+    }
+
+    .main_title {
+      margin-bottom: 24px;
+    }
+
+    .text_block {
+      .title {
+        font-size: 8px;
+        max-width: 149px;
+        margin-bottom: 8px;
+      }
+
+      ul {
+        gap: 8px;
+
+        li {
+          font-size: 8px;
+          padding-left: 7px;
+
+          &::before {
+            width: 3px;
+            height: 3px;
+          }
+        }
+      }
+    }
+
+    .bg {
+      right: -348px;
+      bottom: 118px;
+      height: 247px;
+    }
+
+    &_form {
+      width: 100%;
+      gap: 22px;
+
+      &_wrap {
+        gap: 24px;
+      }
+
+      .btn_golden {
+        width: 100%;
+      }
+
+      .description {
+        font-size: 6px;
+        width: 139px;
+      }
+    }
+
+    .text_block {
+      width: 100%;
+    }
+  }
+
+  .working {
+    padding-bottom: 11.59px;
+
+    .bg {
+      left: -63px;
+      width: calc(100% + 79px);
+      height: 225px;
+    }
+
+    .main_title {
+      margin-bottom: 12px;
+    }
+
+    .title {
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+
+    .description {
+      font-size: 8px;
+      margin-bottom: 8px;
+      max-width: 147px;
+    }
+
+    .description.first {
+      font-style: italic;
+      max-width: 152px;
+      font-weight: 400;
+    }
+
+    .description.last {
+      margin-bottom: 0;
+      max-width: 147px;
+    }
+
+    .links {
+      flex-direction: column;
+      position: absolute;
+      right: 29px;
+      bottom: 40px;
+      gap: 8px;
+
+      a {
+        height: 8px;
+
+        img {
+          width: 8px;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  footer {
+    padding: 25px 0;
+
+    .right_block {
+      .main_input {
+        font-size: 18px;
+        padding-bottom: 15px;
+      }
+
+      .btn_golden {
+        padding: 20px;
+        color: #2a2a2a;
+        font-family: "Montserrat", sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        background-color: #eaa363;
+      }
+    }
+
+    .footer_top {
+      margin-bottom: 21px;
+
+      .right_block {
+        align-items: start;
+        gap: 21px;
+
+        .btn_golden {
+          width: 100%;
+        }
+
+        .description {
+          font-size: 14px;
+          // width: 100%;
+          margin: 0;
+          width: 243px;
+        }
+
+        .links {
+          margin: 70px auto 100px auto;
+          gap: 22px;
+
+          a {
+            height: 8px;
+
+            img {
+              width: 29px;
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+
+    .footer_bottom {
+      gap: 4px;
+
+      img {
+        width: 220px;
+        height: auto;
+      }
+
+      p {
+        margin-top: 42px;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .partner_home {
+    .main_container {
+      .partner_home_bg {
+        top: 57px;
+        width: 211px;
+        height: 438px;
+        right: -105px;
+        object-fit: cover;
+      }
+    }
+
+    .partner_home_bg_right {
+      display: none;
+    }
+
+    .partner_home_bg_left {
+      top: 37px;
+      left: 0;
+      height: 209px;
+    }
+
+    .partner_home_btns {
+      flex-direction: column;
+      gap: 20px;
+
+      .partner_btn {
+        gap: 10px;
+        font-size: 18px;
+      }
+    }
+
+    h1 {
+      padding-top: 0;
+      font-size: 35px;
+      line-height: 90.816%;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 34px;
+    }
+  }
+
+  .partner_statistic {
+    padding-bottom: 137px;
+    .main_container {
+      flex-direction: column;
+    }
+
+    .partner_statistic_card {
+      padding: 50px 21px;
+
+      h6 {
+        font-size: 70px;
+        span {
+          font-size: 25px;
+        }
+      }
+      .left_line {
+        width: 100px;
+        height: 5px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        top: 0;
+        bottom: auto;
+        border-radius: 0 0 20px 20px;
+      }
+
+      .right_line {
+        width: 100px;
+        height: 5px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        top: auto;
+        bottom: 0;
+        border-radius: 20px 20px 0 0;
+      }
+    }
+  }
+
+  .partner_calculation {
+    .partner_calculation_in {
+      flex-direction: column;
+    }
+
+    .partner_calculation_right {
+      width: 100%;
+    }
+
+    .calculation_title {
+      font-size: 60px;
+      line-height: 90.816%;
+      margin-bottom: 30px;
+    }
+
+    .partner_calculation_left {
+      h6 {
+        font-size: 27px;
+      }
+
+      p,
+      span {
+        font-size: 18px;
+      }
+
+      p {
+        margin-bottom: 30px;
+      }
+
+      span {
+        margin-bottom: 50px;
+      }
+    }
+  }
+
+  .adventages {
+    margin-bottom: 185px;
+
+    .adventages_title {
+      margin-bottom: 58px;
+      max-width: 313px;
+      font-size: 34px;
+      line-height: 90.816%;
+
+      .adventages_title_under {
+        padding-top: 10px;
+        font-size: 22px;
+        line-height: 90.816%;
+      }
+    }
+
+    .adventages_in_one {
+      display: block;
+      flex-direction: column;
+      gap: 40px;
+
+      .adventages_right_bg {
+        display: none;
+      }
+
+      .adventages_mobile_bg_1 {
+        display: block;
+      }
+
+      .adventages_card {
+        text-align: center;
+        height: 208px;
+        margin-bottom: 40px;
+
+        .adventages_card_icon {
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+        }
+      }
+    }
+    .adventages_in_two {
+      margin-top: 0;
+      flex-direction: column;
+      gap: 40px;
+      display: block;
+
+      .adventages_left_bg {
+        display: none;
+      }
+
+      .adventages_mobile_bg_2 {
+        display: block;
+      }
+
+      .adventages_card {
+        text-align: center;
+        margin-bottom: 40px;
+        height: 208px;
+
+        .adventages_card_icon {
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+        }
+      }
+
+      .adventages_card:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .object_home {
+    padding-top: 88px;
+  }
+
+  .object_home__slider {
+    .slider_wrapper {
+      .spiper_pagination {
+        height: 46px;
+
+        span {
+          height: 2px;
+          width: 37px;
+        }
+      }
+    }
+  }
+
+  .about_project {
+    padding-top: 40px;
+
+    .logo {
+      width: 100%;
+      object-fit: contain;
+      height: 100px;
+      margin-bottom: 33px;
+    }
+
+    .main_container {
+      .star {
+        width: 259px;
+        height: auto;
+        right: -129.5px;
+        top: 110px;
+      }
+    }
+
+    .content {
+      flex-direction: column;
+      gap: 24px;
+
+      .left_block {
+        width: 100%;
+
+        h2 {
+          font-size: 40px;
+          text-align: left;
+          margin-bottom: 50px;
+        }
+
+        ul {
+          gap: 20px;
+
+          li {
+            font-size: 18px;
+          }
+        }
+
+        .stars {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 18px;
+          margin-top: 24px;
+          width: 100%;
+
+          img {
+            width: 23px;
+            height: auto;
+          }
+
+          .big {
+            width: 35px;
+          }
+        }
+      }
+
+      .right_block {
         padding-top: 0;
 
-        .main_title {
-            font-size: 20px;
+        .description {
+          font-size: 18px;
+          margin-bottom: 18px;
         }
+
+        h3 {
+          font-size: 20px;
+          max-width: 300px;
+          margin-bottom: 24px;
+        }
+      }
     }
 
-    .object_project {
-        padding-bottom: 18px;
-        
-        h2 {
-            font-size: 40px;
-            margin-right: 57px;
-            margin-bottom: 18px;
+    .image_block {
+      flex-direction: column;
+      padding-bottom: 0;
 
-        }
+      img {
+        width: 100%;
+        margin-bottom: 18px;
+      }
 
-        .content_tilte {
-            font-size: 20px;
-            margin-bottom: 19px;
-        }
+      .text {
+        font-size: 14px;
+        margin-bottom: 48px !important;
+      }
 
-        .content_top {
-            margin-bottom: 18px;
+      .left_block {
+        padding-top: 0;
+        text-align: center;
+        width: 100%;
+      }
 
-            .main_container {
-                flex-direction: column;
-                gap: 0;
-            }
-
-            .left_block {
-                width: 100%;
-                text-align: right;
-                padding-right: 20px;
-
-                .title {
-                    font-size: 20px;
-                    margin-bottom: 4px;
-                    max-width: 179px;
-                    text-align: right;
-                    margin-left: auto;
-                }
-
-                .subtitle {
-                    font-size: 10px;
-                    opacity: 0.4;
-                    margin-bottom: 18px;
-                }
-
-                img {
-                    display: none;
-                }
-            }
-
-            .right_block {
-                width: 100%;
-            }
-        }
-
-        .content_bottom {
-            .main_container {
-                gap: 7px;
-                margin-bottom: 18px;
-            }
-
-            .left_img {
-                width: calc(100% - 7px - 116px);
-            }
-
-            .right_img {
-                width: 116px;
-                object-fit: cover;
-            }
-        }
-
-        .bottom_text {
-            flex-direction: column;
-            gap: 18px;
-            align-items: flex-start;
-
-            .left_block {
-                width: 100%;
-
-                .title {
-                    max-width: 314px;
-                    font-size: 18px;
-                    margin-bottom: 18px;
-                }
-            }
-
-            .right_block {
-                font-size: 8px;
-                padding-left: 8px;
-
-                &::before {
-                    height: 12px;
-                    left: 0px;
-                }
-            }
-        }
+      .right_block {
+        width: 100%;
+        text-align: center;
+      }
     }
-    
-    .object_investments {
-        .bg_2 {
-            height: 118px;
-            width: auto;
-            right: -132px;
-            top: 745px;
-        }
+  }
 
-        .bg_1 {
-            position: static;
-            width: calc(100% + 40px + 32px);
-            transform: translateX(-20px);
-        }
+  .sochi {
+    padding-bottom: 96px;
 
-        .main_title {
-            font-size: 40px;
-        }
-
-        p {
-            font-size: 12px;
-            padding-left: 0;
-            margin-bottom: 0;
-        }
-
-        .text_block {
-            width: 100%;
-
-            .title {
-                padding-left: 0;
-                font-size: 20px;
-                margin-bottom: 8px;
-            }
-
-            ul {
-                padding-left: 0;
-
-                li {
-                    font-size: 18px;
-                    padding-left: 24px;
-
-                    &::before {
-                        width: 5px;
-                        height: 5px;
-                    }
-                }
-            }
-        }
+    h2 {
+      font-size: 40px;
+      margin-bottom: 18px;
+      text-align: left;
     }
-}
 
-@media only screen and (max-width: 576px) {
+    .content {
+      flex-direction: column;
+      margin-bottom: 18px;
+
+      .left_block {
+        width: 100%;
+
+        .mobile {
+          display: block;
+        }
+
+        .subtitle {
+          color: #161616;
+          font-size: 18px;
+          font-weight: 300;
+          line-height: normal;
+          text-transform: uppercase;
+          opacity: 0.4;
+          margin-bottom: 25px;
+          text-align: left;
+        }
+
+        .description {
+          color: #161616;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: normal;
+          text-transform: uppercase;
+          margin-bottom: 18px;
+          text-align: left;
+        }
+
+        img.mobile {
+          width: 100%;
+          margin: 24px 0;
+        }
+
+        .main_link {
+          margin: 18px 0 23px;
+        }
+      }
+
+      .right_block {
+        display: none;
+      }
+    }
+
+    ul {
+      li {
+        &:nth-child(1) {
+          font-size: 24px;
+          font-weight: 600;
+          margin-bottom: 8px;
+
+          div {
+            &:nth-child(2) {
+              display: none;
+            }
+          }
+        }
+
+        &:nth-child(2) {
+          display: none;
+        }
+
+        &:not(:nth-child(1)):not(.line) {
+          font-size: 18px;
+          font-weight: 400;
+
+          span {
+            font-size: 8px;
+            margin-left: 7px;
+            transform: translateY(-14px);
+          }
+        }
+      }
+
+      .line {
+        margin: 18px 0 20px !important;
+      }
+    }
+  }
+
+  .object_consultation {
+    padding-top: 0;
+
     .main_title {
+      font-size: 20px;
+    }
+  }
+
+  .object_project {
+    padding-bottom: 18px;
+
+    h2 {
+      font-size: 40px;
+      margin-right: 57px;
+      margin-bottom: 18px;
+    }
+
+    .content_tilte {
+      font-size: 20px;
+      margin-bottom: 19px;
+    }
+
+    .content_top {
+      margin-bottom: 18px;
+
+      .main_container {
+        flex-direction: column;
+        gap: 0;
+      }
+
+      .left_block {
+        width: 100%;
+        text-align: right;
+        padding-right: 20px;
+
+        .title {
+          font-size: 20px;
+          margin-bottom: 4px;
+          max-width: 179px;
+          text-align: right;
+          margin-left: auto;
+        }
+
+        .subtitle {
+          font-size: 10px;
+          opacity: 0.4;
+          margin-bottom: 18px;
+        }
+
+        img {
+          display: none;
+        }
+      }
+
+      .right_block {
+        width: 100%;
+      }
+    }
+
+    .content_bottom {
+      .main_container {
+        gap: 7px;
+        margin-bottom: 18px;
+      }
+
+      .left_img {
+        width: calc(100% - 7px - 116px);
+      }
+
+      .right_img {
+        width: 116px;
+        object-fit: cover;
+      }
+    }
+
+    .bottom_text {
+      flex-direction: column;
+      gap: 18px;
+      align-items: flex-start;
+
+      .left_block {
+        width: 100%;
+
+        .title {
+          max-width: 314px;
+          font-size: 18px;
+          margin-bottom: 18px;
+        }
+      }
+
+      .right_block {
+        font-size: 8px;
+        padding-left: 8px;
+
+        &::before {
+          height: 12px;
+          left: 0px;
+        }
+      }
+    }
+  }
+  .about_apartment-page {
+    .content_bottom .right_img {
+      height: 100%;
+    }
+  }
+
+  .object_investments {
+    .bg_2 {
+      height: 118px;
+      width: auto;
+      right: -132px;
+      top: 745px;
+    }
+
+    .bg_1 {
+      position: static;
+      width: calc(100% + 40px + 32px);
+      transform: translateX(-20px);
+    }
+
+    .main_title {
+      font-size: 40px;
+    }
+
+    p {
+      font-size: 12px;
+      padding-left: 0;
+      margin-bottom: 0;
+    }
+
+    .text_block {
+      width: 100%;
+
+      .title {
+        padding-left: 0;
+        font-size: 20px;
+        margin-bottom: 8px;
+      }
+
+      ul {
+        padding-left: 0;
+
+        li {
+          font-size: 18px;
+          padding-left: 24px;
+
+          &::before {
+            width: 5px;
+            height: 5px;
+          }
+        }
+      }
+    }
+  }
+  .investments_section .incom_box .incom_title {
+    font-size: 18px;
+  }
+  .object_project .bottom_text .left_block .title {
+    padding: 20px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .selling_form > div:first-child {
+    display: none;
+  }
+  .selling_form-right {
+    padding: 50px;
+  }
+  .our_services-cards {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about_apartment-page .services_boxes {
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  .about_apartment-page .object_project .bottom_text .title {
+    margin-top: 0;
+    max-width: 100%;
+  }
+  .about_apartment-page .object_project h2:first-child {
+    margin-right: 0;
+  }
+  .about_apartment-page .object_project .content_bottom .main_container {
+    margin-top: 50px;
+  }
+  .about_apartment-page .object_project h3 {
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 20px;
+  }
+  .about_apartment-page .services_boxes .services_box {
+    height: fit-content;
+    border-left: 1px solid #949494;
+  }
+  .about_apartment-page .services_boxes .services_box-title {
+    margin: 0 0 20px 0;
+  }
+  .about_apartment-page .economic .economic_box-info,
+  .about_apartment-page .economic .economic_box-statistik-title {
+    font-size: 16px;
+    line-height: 22px;
+    margin-right: 20px;
+    width: 86%;
+  }
+  .about_apartment-page .economic .economic_box-title {
+    margin: 20px 20px 20px 0;
+    width: 86%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .main_title {
+    font-size: 18px;
+  }
+  .selection_intro-boxes {
+    gap: 2rem;
+    flex-direction: column;
+  }
+  .catalog_page header {
+    padding-bottom: 21px;
+  }
+  .selection_intro .main_title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .selection_intro {
+    margin-top: 130px;
+    padding-bottom: 50px;
+  }
+  .about_apartment-page .economic .economic_box .economic_statistics-box {
+    margin-bottom: 20px;
+  }
+  .about_apartment-page .economic .economic_box-info,
+  .about_apartment-page .economic .economic_box-statistik-title {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .about_apartment-page .economic .economic_box .economic_statistics {
+    padding: 30px 0;
+    margin-bottom: 30px;
+  }
+  .apartments_cards .card_item_head .swiper-slide img,
+  .apartments_cards-two .card_item_head .swiper-slide img {
+    height: 250px;
+  }
+  .catalog_page .apartments {
+    padding: 50px 0;
+  }
+  .catalog_page .apartments_numbers {
+    margin-top: 50px;
+  }
+  .about_apartment-page
+    .economic
+    .economic_box
+    .economic_statistics-box
+    .line-box,
+  .about_apartment-page .economic .economic_box .economic_statistics-box p {
+    font-size: 16px;
+  }
+  .about_apartment-page .sochi,
+  .about_apartment-page .about_project .image_block {
+    padding-bottom: 50px;
+  }
+  .about_apartment-page .about_project .image_block .left_block,
+  .about_apartment-page .about_project {
+    padding-top: 40px;
+  }
+  .about_apartment-page .economic .economic_box-title {
+    width: 100%;
+  }
+
+  .our_services-card {
+    height: fit-content;
+    padding: 30px;
+  }
+  .about_apartment-page
+    .economic
+    .economic_box
+    .economic_statistics-box
+    .line-box {
+    width: 60%;
+  }
+  .our_services-card-title {
+    font-size: 25px;
+    line-height: 35px;
+  }
+  .our_services-card-link {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .our_services {
+    padding: 50px 0;
+  }
+  .our_services-cards {
+    margin-top: 50px;
+  }
+  .our_services-card-info {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .result_card-title {
+    font-size: 25px;
+    line-height: 35px;
+  }
+  .result_card-info {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .result_link {
+    margin-top: 50px;
+    font-size: 16px;
+  }
+  .result_card {
+    padding: 30px;
+  }
+  .home_card.selling_home-card {
+    padding: 50px 0;
+  }
+  .home_card.selling_home-card .main_title-two {
+    margin-bottom: 50px;
+  }
+  .home_card.selling_home-card {
+    .main_container {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .main_text_golden {
+      max-width: 100%;
+      br {
+        display: none;
+      }
+    }
+  }
+  .selling_form-right .main_input_tel .selected_flag {
+    top: 28%;
+  }
+  .selling_form-right {
+    padding: 50px 20px;
+  }
+  .selling_form-right .main_input {
+    margin-bottom: 15px;
+  }
+  .selling_apartment-images div:last-child {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .selling_apartment-link {
+    font-size: 16px;
+  }
+  .selling_apartments .main_title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .selling_apartments .main_subtitle-two {
+    font-size: 16px;
+  }
+  .investments_page.top_object {
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+  }
+  .investments_section .select_title {
+    font-size: 20px;
+  }
+  .investments_page.top_object .architecture_book-img img {
+    width: 314px;
+  }
+  .investments_page.investments .bg_1 {
+    width: 350px;
+    top: -20px;
+  }
+  .investments_page.investments {
+    margin-bottom: 0;
+    padding: 50px 0;
+  }
+  .investments_section .incom_box {
+    padding: 16px;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 50px;
+  }
+  .investments_section .incom_box .incom_title {
+    font-size: 16px;
+  }
+  .investments_section .incom_box-line {
+    margin: 0 10px;
+    visibility: hidden;
+  }
+  .investments_section .incom_box-info {
+    justify-content: space-between;
+    width: 100%;
+  }
+  .investments_section .calculator_title {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+  .investments_section .main_title {
+    font-size: 35px;
+    line-height: 46px;
+  }
+  .investments_section .select_title {
+    margin-bottom: 20px;
+  }
+  .investments_section .how_many-apartments .select_tip {
+    margin-top: 30px;
+    // gap: 2rem;
+  }
+  .partner_calculation {
+    .partner_calculation_right {
+      gap: 30px;
+    }
+    .partner_btns {
+      flex-direction: column;
+      gap: 20px;
+
+      button {
         font-size: 18px;
+      }
     }
+  }
 
-    .partner_calculation {
-
-        .partner_calculation_right {
-            gap: 30px;
-        }
-        .partner_btns {
-            flex-direction: column;
-            gap: 20px;
-
-            button {
-                font-size: 18px;
-            }
-        }
+  .partner_home {
+    .partner_home_btns {
+      button {
+        width: 100%;
+      }
     }
-
-    .partner_home {
-        .partner_home_btns {
-            button {
-                width: 100%;
-            }
-        }
-    }
+  }
 }
 
 @media only screen and (max-width: 361px) {
-    .partner_home {
-        margin-bottom: 0;
-    }
+  .partner_home {
+    margin-bottom: 0;
+  }
 }
