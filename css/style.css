@@ -321,6 +321,9 @@ ul {
   line-height: normal;
   transition: 0.2s ease all;
 }
+.btn_dark.black {
+  background: #2a2a2a;
+}
 .btn_dark:hover {
   background: #353535;
 }
@@ -3492,6 +3495,233 @@ footer .footer_bottom p {
 }
 .selection_intro-bottom a {
   animation: linkAnimation 3s ease infinite;
+}
+
+.about_apartment {
+  background-image: url(../images/point-bg.png);
+}
+.about_apartment h1 {
+  font-size: 200px;
+  font-family: "Montserrat";
+  font-weight: 300;
+  max-width: 100%;
+}
+.about_apartment-statistiks {
+  max-width: 576px;
+  padding: 15px 30px 15px 62px;
+  color: #fff;
+  margin-bottom: 35px;
+  position: relative;
+  z-index: 1;
+}
+.about_apartment-statistiks::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #fff;
+  background: rgba(233, 165, 104, 0.0117647059);
+  opacity: 0.9;
+  z-index: -1;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+.about_apartment-statistiks h3 {
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 73.14px;
+}
+.about_apartment-statistiks p {
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: 300;
+  line-height: 24.38px;
+}
+.about_apartment .slider_wrapper .slider_content::before {
+  display: none;
+}
+
+.about_apartment-page .about_project {
+  padding-top: 379px;
+}
+.about_apartment-page .about_project .image_block .text {
+  font-style: normal;
+  text-align: left;
+  font-size: 40px;
+  line-height: 48.76px;
+  font-weight: 300;
+}
+.about_apartment-page .sochi h2 {
+  text-align: left;
+}
+.about_apartment-page .sochi .right_block .subtitle.two {
+  color: #2a2a2a;
+  opacity: 1;
+  text-transform: capitalize;
+  margin-bottom: 50px;
+}
+.about_apartment-page .sochi ul li:not(:nth-child(1)):not(.line) {
+  cursor: pointer;
+}
+.about_apartment-page .sochi ul li:not(:nth-child(1)):not(.line):hover {
+  color: #eaa363;
+}
+.about_apartment-page .sochi ul li:not(:nth-child(1)):not(.line) span {
+  margin-left: 23px;
+}
+.about_apartment-page .sochi ul .line:last-child {
+  opacity: 15%;
+}
+.about_apartment-page .object_consultation .main_title {
+  text-align: center;
+  font-weight: 200;
+}
+.about_apartment-page .object_consultation .main_subtitle {
+  text-align: center;
+}
+.about_apartment-page .object_project h2:first-child {
+  margin-bottom: 0;
+}
+.about_apartment-page .object_project h3 {
+  font-size: 40px;
+  font-weight: 400;
+  margin: 50px 0 31px auto;
+  line-height: 48.76px;
+  max-width: 895px;
+  text-transform: uppercase;
+}
+.about_apartment-page .object_project .line-b {
+  border-bottom: 1px solid #eaa363;
+}
+.about_apartment-page .services_boxes {
+  margin-top: 19px;
+  display: flex;
+  border-top: 1px solid #949494;
+  align-items: start;
+  justify-content: space-between;
+}
+.about_apartment-page .services_boxes .services_box {
+  padding-right: 97px;
+  color: #2a2a2a;
+  padding-top: 100px;
+  padding-bottom: 154px;
+  display: flex;
+  flex-direction: column;
+  height: 624px;
+  justify-content: space-between;
+}
+.about_apartment-page .services_boxes .services_box-title {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48.76px;
+  margin-bottom: 101px;
+  text-transform: capitalize;
+}
+.about_apartment-page .services_boxes .services_box-info {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24.38px;
+}
+.about_apartment-page .services_boxes .services_box:not(:nth-child(1)) {
+  padding-left: 24px;
+  border-left: 1px solid #949494;
+  position: relative;
+}
+.about_apartment-page .line {
+  width: 1px;
+}
+.about_apartment-page .object_project .content_bottom .main_container {
+  margin-top: 100px;
+}
+.about_apartment-page .object_project .content_bottom .right_img-box {
+  position: relative;
+  z-index: 1;
+}
+.about_apartment-page .object_project .content_bottom .right_img-box::before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: -25px;
+  right: -25px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #eaa363;
+}
+.about_apartment-page .economic .main_container {
+  margin: 0;
+  padding: 0;
+  max-width: 1680px;
+}
+.about_apartment-page .economic .main_subtitle {
+  text-align: left;
+}
+.about_apartment-page .economic .economic_boxes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about_apartment-page .economic .economic_box {
+  color: #2a2a2a;
+  position: relative;
+  z-index: 1;
+}
+.about_apartment-page .economic .economic_box-title {
+  margin: 50px 0;
+}
+.about_apartment-page .economic .economic_box-info, .about_apartment-page .economic .economic_box-statistik-title {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24.38px;
+  margin-bottom: 76px;
+}
+.about_apartment-page .economic .economic_box-statistik-title {
+  font-style: italic;
+}
+.about_apartment-page .economic .economic_box .economic_statistics-box {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.about_apartment-page .economic .economic_box .economic_statistics-box:first-child {
+  margin-bottom: 50px;
+}
+.about_apartment-page .economic .economic_box .economic_statistics-box p {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 24.38px;
+  color: #000;
+}
+.about_apartment-page .economic .economic_box .economic_statistics-box .line-box {
+  width: 464px;
+  padding: 13px 31px;
+  background: #eaa363;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24.38px;
+  text-align: right;
+}
+.about_apartment-page .economic .economic_box .line-bg {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.about_apartment-page .economic .economic_box .line-bg span {
+  width: 1px;
+  height: 250px;
+  background: #000;
+}
+.about_apartment-page .main_title-two.left {
+  text-align: left;
 }
 
 @media only screen and (max-width: 1800px) {

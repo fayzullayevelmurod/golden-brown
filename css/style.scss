@@ -348,7 +348,9 @@ ul {
   font-weight: 300;
   line-height: normal;
   transition: 0.2s ease all;
-
+  &.black {
+    background: #2a2a2a;
+  }
   &:hover {
     background: #353535;
   }
@@ -4037,5 +4039,261 @@ footer {
   }
 }
 // catalog page end
+
+// about_apartment start
+.about_apartment {
+  background-image: url(../images/point-bg.png);
+
+  h1 {
+    font-size: 200px;
+    font-family: "Montserrat";
+    font-weight: 300;
+    max-width: 100%;
+  }
+
+  &-statistiks {
+    max-width: 576px;
+    padding: 15px 30px 15px 62px;
+    color: #fff;
+    margin-bottom: 35px;
+    position: relative;
+    z-index: 1;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 1px solid #fff;
+      background: #e9a56803;
+      opacity: 0.9;
+      z-index: -1;
+      backdrop-filter: blur(10px);
+    }
+
+    h3 {
+      font-size: 60px;
+      font-weight: 300;
+      line-height: 73.14px;
+    }
+    p {
+      font-size: 20px;
+      margin-top: 20px;
+      font-weight: 300;
+      line-height: 24.38px;
+    }
+  }
+  .slider_wrapper .slider_content::before {
+    display: none;
+  }
+}
+.about_apartment-page {
+  .about_project {
+    padding-top: 379px;
+    .image_block .text {
+      font-style: normal;
+      text-align: left;
+      font-size: 40px;
+      line-height: 48.76px;
+      font-weight: 300;
+    }
+  }
+  .sochi {
+    h2 {
+      text-align: left;
+    }
+    .right_block .subtitle.two {
+      color: #2a2a2a;
+      opacity: 1;
+      text-transform: capitalize;
+      margin-bottom: 50px;
+    }
+    ul li:not(:nth-child(1)):not(.line) {
+      cursor: pointer;
+      &:hover {
+        color: #eaa363;
+      }
+
+      span {
+        margin-left: 23px;
+      }
+    }
+    ul .line:last-child {
+      opacity: 15%;
+    }
+  }
+  .object_consultation {
+    .main_title {
+      text-align: center;
+      font-weight: 200;
+    }
+    .main_subtitle {
+      text-align: center;
+    }
+  }
+  .object_project {
+    h2:first-child {
+      margin-bottom: 0;
+    }
+    h3 {
+      font-size: 40px;
+      font-weight: 400;
+      margin: 50px 0 31px auto;
+      line-height: 48.76px;
+      max-width: 895px;
+      text-transform: uppercase;
+    }
+    .line-b {
+      border-bottom: 1px solid #eaa363;
+    }
+    .line-t {
+    }
+  }
+  .services_boxes {
+    margin-top: 19px;
+    display: flex;
+    border-top: 1px solid #949494;
+    align-items: start;
+    justify-content: space-between;
+    .services_box {
+      padding-right: 97px;
+      color: #2a2a2a;
+      padding-top: 100px;
+      padding-bottom: 154px;
+      display: flex;
+      flex-direction: column;
+      height: 624px;
+      justify-content: space-between;
+      &-title {
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 48.76px;
+        margin-bottom: 101px;
+        text-transform: capitalize;
+      }
+      &-info {
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 24.38px;
+      }
+      &:not(:nth-child(1)) {
+        padding-left: 24px;
+        border-left: 1px solid #949494;
+        position: relative;
+      }
+    }
+  }
+  .line {
+    width: 1px;
+    // height: 100px;
+    // background: #2a2a2a;
+  }
+  .object_project {
+    .content_bottom {
+      .main_container {
+        margin-top: 100px;
+      }
+      .right_img-box {
+        position: relative;
+        z-index: 1;
+        &::before {
+          z-index: -1;
+          content: "";
+          position: absolute;
+          top: -25px;
+          right: -25px;
+          width: 100%;
+          height: 100%;
+          border: 1px solid #eaa363;
+        }
+      }
+    }
+  }
+  .economic {
+    .main_container {
+      margin: 0;
+      padding: 0;
+      max-width: 1680px;
+    }
+    .main_subtitle {
+      text-align: left;
+    }
+    .economic_boxes {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .economic_box {
+      color: #2a2a2a;
+      position: relative;
+      z-index: 1;
+
+      &-title {
+        margin: 50px 0;
+      }
+      &-info,
+      &-statistik-title {
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 24.38px;
+        margin-bottom: 76px;
+      }
+      &-statistik-title {
+        font-style: italic;
+      }
+      .economic_statistics {
+        &-box {
+          display: flex;
+          align-items: center;
+          gap: 25px;
+
+          &:first-child {
+            margin-bottom: 50px;
+          }
+
+          p {
+            font-size: 20px;
+            font-style: italic;
+            font-weight: 500;
+            line-height: 24.38px;
+            color: #000;
+          }
+          .line-box {
+            width: 464px;
+            padding: 13px 31px;
+            background: #eaa363;
+            color: #fff;
+            font-family: Montserrat;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 24.38px;
+            text-align: right;
+          }
+        }
+      }
+      .line-bg {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+
+        span {
+          width: 1px;
+          height: 250px;
+          background: #000;
+        }
+      }
+    }
+  }
+  .main_title-two.left {
+    text-align: left;
+  }
+}
+// about_apartment end
 
 @import "responsive";
